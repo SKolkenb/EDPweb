@@ -38,10 +38,7 @@
         var map = L.map('map', {
             zoomControl:true, maxZoom:17, minZoom:6
         }).fitBounds([[50.68830142178744,6.030879056898732],[50.894054444915895,6.438413005498334]]);
-
-        function locateUser(){
         map.locate({setView : true});
-    }
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -64,7 +61,7 @@
 
         var layer_warnung_3 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
             layers: 'Warnungen_Landkreise',
-            opacity: 0.75,
+            opacity: 0.5,
             attribution: '',
             minZoom: 6,
             maxZoom: 17,
@@ -76,7 +73,7 @@
         
         var layer_radar_2 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
             layers: 'Niederschlagsradar',
-            opacity: 0.75,
+            opacity: 0.5,
             attribution: '',
             minZoom: 6,
             maxZoom: 17,
