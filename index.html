@@ -58,7 +58,8 @@
         function setBounds() {
         }
         map.createPane('pane_OpenStreetMap_0');
-        map.getPane('pane_OpenStreetMap_0').style.zIndex = 400;
+        map.getPane('pane_OpenStreetMap_0').style.zIndex = 200;
+        
         
         
         var layer_mtb_1 = L.tileLayer('cache_mtb/{z}/{x}/{y}.png', {
@@ -73,7 +74,6 @@
         map.addLayer(layer_mtb_1);
             
         var layer_OpenStreetMap_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            pane: 'pane_OpenStreetMap_0',
             opacity: 1.0,
             attribution: '',
             minZoom: 6,
