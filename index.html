@@ -59,7 +59,7 @@
         }
 
         var layer_warnung_3 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
-            layers: 'Warnungen_Landkreise, Niederschlagsradar',
+            layers: 'Warnungen_Landkreise',
             opacity: 0.75,
             attribution: '',
             minZoom: 6,
@@ -70,7 +70,17 @@
         layer_warnung_3;
         map.addLayer(layer_warnung_3);
         
-     
+        var layer_radar_2 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
+            layers: 'Niederschlagsradar',
+            opacity: 0.75,
+            attribution: '',
+            minZoom: 6,
+            maxZoom: 17,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_radar_2;
+        map.addLayer(layer_radar_2);
         
         var layer_mtb_1 = L.tileLayer('cache_mtb/{z}/{x}/{y}.png', {
             opacity: 0.75,
