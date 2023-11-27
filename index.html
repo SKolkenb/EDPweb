@@ -47,7 +47,7 @@
             primaryLengthUnit: 'meters',
             secondaryLengthUnit: 'kilometers',
             primaryAreaUnit: 'sqmeters',
-            secondaryAreaUnit: 'hectares'
+            secondaryAreaUnit: 'sqkilometers'
         });
         measureControl.addTo(map);
         document.getElementsByClassName('leaflet-control-measure-toggle')[0]
@@ -57,10 +57,19 @@
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
-        map.createPane('pane_OpenStreetMap_0');
-        map.getPane('pane_OpenStreetMap_0').style.zIndex = 200;
+
+        var layer_warnung_3 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
+            opacity: 0.75,
+            attribution: '',
+            minZoom: 6,
+            maxZoom: 17,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_warnung_3;
+        map.addLayer(layer_warnung_3);
         
-        
+     
         
         var layer_mtb_1 = L.tileLayer('cache_mtb/{z}/{x}/{y}.png', {
             opacity: 0.75,
@@ -95,7 +104,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers({"OpenStreetMap": layer_OpenStreetMap_0,},{"MTB am Rursee": layer_mtb_1,}).addTo(map);
+        L.control.layers({"OpenStreetMap": layer_OpenStreetMap_0,},{"MTB am Rursee": layer_mtb_1,"Wetterwarnungen": layer_warnung_3}).addTo(map);
         setBounds();
         </script>
     </body>
