@@ -69,7 +69,7 @@
             maxNativeZoom: 19
         });
         layer_warnung_3;
-        map.addLayer(layer_warnung_3);
+        //map.addLayer(layer_warnung_3);
         
         var layer_radar_2 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
             layers: 'Niederschlagsradar',
@@ -81,7 +81,7 @@
             maxNativeZoom: 19
         });
         layer_radar_2;
-        map.addLayer(layer_radar_2);
+        //map.addLayer(layer_radar_2);
         
         var layer_mtb_1 = L.tileLayer('cache_mtb/{z}/{x}/{y}.png', {
             opacity: 0.75,
@@ -104,6 +104,17 @@
         });
         layer_OpenStreetMap_0;
         map.addLayer(layer_OpenStreetMap_0);
+
+        var layer_EifertMap_0 = L.tileLayer('https://map.eifert-systems.de/{z}/{x}/{y}.png', {
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 6,
+            maxZoom: 17,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_EifertMap_0;
+        map.addLayer(layer_EifertMap_0);
             
         var osmGeocoder = new L.Control.Geocoder({
             collapsed: true,
