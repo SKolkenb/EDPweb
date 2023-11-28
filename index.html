@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
             margin: 0;
         }
         </style>
-        <title></title>
+        <title>GIS</title>
     </head>
     <body>
         <div id="map">
@@ -127,7 +127,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers({"OpenStreetMap": layer_OpenStreetMap_0,"OSM EDP Style": layer_EifertMap_0,},{"MTB am Rursee": layer_mtb_1,"Wetterwarnungen": layer_warnung_3,"Niederschlagsradar": layer_radar_2,}).addTo(map);
+        L.control.layers({"OpenStreetMap": layer_OpenStreetMap_0,"OSM EDP Style": layer_EifertMap_0,},{"MTB am Rursee": layer_mtb_1,"Wetterwarnungen": layer_warnung_3,"Niederschlagsradar": layer_radar_2,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
     </body>
