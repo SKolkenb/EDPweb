@@ -62,6 +62,7 @@
         var layer_warnung_3 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
             layers: 'Warnungen_Landkreise',
             opacity: 0.5,
+            transparent: 'true',
             attribution: '',
             minZoom: 6,
             maxZoom: 17,
@@ -74,6 +75,7 @@
         var layer_radar_2 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
             layers: 'Niederschlagsradar',
             format: 'image/png',
+            transparent: 'true',
             opacity: 0.5,
             attribution: '',
             minZoom: 6,
