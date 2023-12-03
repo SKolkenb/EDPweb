@@ -73,6 +73,7 @@
         
         var layer_radar_2 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
             layers: 'Niederschlagsradar',
+            format: 'image/png',
             opacity: 0.5,
             attribution: '',
             minZoom: 6,
