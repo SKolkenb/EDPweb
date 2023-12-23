@@ -87,7 +87,7 @@
         layer_radar_2;
         //map.addLayer(layer_radar_2);
 
-        var layer_mgrs_1 = L.tileLayer('cache_MGRS/{z}/{x}/{y}.png', {
+        var layer_mgrs_1 = L.tileLayer.wms('https://www.wms.nrw.de/geobasis/wms_nw_utmref?', {
             opacity: 1,
             attribution: '',
             minZoom: 6,
