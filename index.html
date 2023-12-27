@@ -89,7 +89,8 @@
 
         var layer_mgrs_1 = L.tileLayer.wms('https://www.wms.nrw.de/geobasis/wms_nw_utmref?', {
             layers: 'nw_utmref_kacheln_1km',
-            opacity: 1,
+            format: 'image/png',
+            opacity: 0.5,
             attribution: '',
             transparent: 'true',
             minZoom: 6,
