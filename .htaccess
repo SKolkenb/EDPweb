@@ -1,0 +1,4 @@
+AuthType Basec
+AuthName "Passwortgeschützter Bereich"
+AuthUserFile /files/.htpasswd
+Require valid-user
