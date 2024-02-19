@@ -82,6 +82,20 @@
         });
         layer_warnung_3;
         //map.addLayer(layer_warnung_3);
+
+        var layer_aachen_3 = L.tileLayer.wms('https://geoserver.aachen.de/opendata/stadtplan/wms?', {
+            layers: 'Stadtplan_Aachen',
+            format: 'image/png',
+            opacity: 0.75,
+            transparent: 'true',
+            attribution: '',
+            minZoom: 6,
+            maxZoom: 18,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_aachen_3;
+        //map.addLayer(layer_aachen_3);
         
         var layer_radar_2 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
             layers: 'Niederschlagsradar',
@@ -176,6 +190,7 @@
             "LKW-befahrbare Waldwege": layer_lkw_1,
             "UTMREF / MGRS": layer_mgrs_1,
             "Wetterwarnungen": layer_warnung_3,
+            "Stadtplan Aachen": layer_aachen_3,
             "Niederschlagsradar": layer_radar_2,
         },{collapsed:false}).addTo(map);
         setBounds();
