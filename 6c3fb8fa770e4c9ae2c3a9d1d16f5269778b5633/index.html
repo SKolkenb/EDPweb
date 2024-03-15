@@ -19,7 +19,7 @@
         }
         </style>
         <title>GIS MTBamRursee</title
-		<link rel="icon" href="./pin.png">
+	<link rel="icon" href="./pin.png">
     </head>
     <body>
         <div id="map">
@@ -172,11 +172,12 @@
         L.control.layers({
             "OpenStreetMap": layer_OpenStreetMap_0,
         },{
-            "MTB am Rursee": layer_mtb_1,
+            
             "LKW-befahrbare Waldwege": layer_lkw_1,
             "UTMREF / MGRS": layer_mgrs_1,
             "Wetterwarnungen": layer_warnung_3,
             "Niederschlagsradar": layer_radar_2,
+	    "MTB am Rursee": layer_mtb_1,
         },{collapsed:false}).addTo(map);
         setBounds();
         </script>
