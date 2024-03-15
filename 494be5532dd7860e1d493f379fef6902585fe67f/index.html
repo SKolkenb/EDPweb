@@ -82,6 +82,7 @@
         });
         layer_warnung_3;
         //map.addLayer(layer_warnung_3);
+
         
         var layer_radar_2 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
             layers: 'Niederschlagsradar',
@@ -124,7 +125,7 @@
         layer_mgrs_1;
         //map.addLayer(layer_mgrs_1);
         
-        var layer_mtb_1 = L.tileLayer('cache_mtb/{z}/{x}/{y}.png', {
+        var layer_zugweg_1 = L.tileLayer('cache_zugwegkoeln/{z}/{x}/{y}.png', {
             opacity: 0.75,
             attribution: '',
             minZoom: 6,
@@ -132,7 +133,7 @@
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
-        layer_mtb_1;
+        layer_zugweg_1;
         //map.addLayer(layer_mtb_1);
             
         var layer_OpenStreetMap_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -169,10 +170,9 @@
         .title += 'Search for a place';
         var baseMaps = {};
         L.control.layers({
-            "OpenStreetMap": layer_OpenStreetMap_0,
-            "Stadtplan Aachen": layer_aachen_3,
-        },{
-            "MTB am Rursee": layer_mtb_1,
+            "OpenStreetMap": layer_OpenStreetMap_0
+			},{
+            "Zugweg Karneval Köln 2024": layer_zugweg_1,
             "LKW-befahrbare Waldwege": layer_lkw_1,
             "UTMREF / MGRS": layer_mgrs_1,
             "Wetterwarnungen": layer_warnung_3,
