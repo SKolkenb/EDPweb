@@ -147,7 +147,7 @@
         layer_OpenStreetMap_0;
         map.addLayer(layer_OpenStreetMap_0);
 
-        var layer_EifertMap_0 = L.tileLayer('https://map.eifert-systems.de/{z}/{x}/{y}.png', {
+        var layer_OpenTopoMap_0 = L.tileLayer('https://tile.opentopomap.org/{z}/{x}/{y}.png', {
             opacity: 1.0,
             attribution: '',
             minZoom: 6,
@@ -155,8 +155,8 @@
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
-        layer_EifertMap_0;
-        //map.addLayer(layer_EifertMap_0);
+        layer_OpenTopoMap_0;
+        //map.addLayer(layer_OpenTopoMap_0);
             
         var osmGeocoder = new L.Control.Geocoder({
             collapsed: true,
