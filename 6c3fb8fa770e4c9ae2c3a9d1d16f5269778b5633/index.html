@@ -69,8 +69,20 @@
                 position: 'bottomright'
             }
         ).addTo(map);
-            
-        var layer_warnung_3 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
+
+	    
+        var osmGeocoder = new L.Control.Geocoder({
+            collapsed: true,
+            position: 'topleft',
+            text: 'Search',
+            title: 'Testing'
+        }).addTo(map);
+        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
+        .className += ' fa fa-search';
+        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
+        .title += 'Search for a place';
+        setBounds();
+	var layer_warnung_3 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
             layers: 'Warnungen_Landkreise',
             format: 'image/png',
             opacity: 0.5,
@@ -168,17 +180,7 @@
         });
         layer_google_0;
         //map.addLayer(layer_google_0);
-            
-        var osmGeocoder = new L.Control.Geocoder({
-            collapsed: true,
-            position: 'topleft',
-            text: 'Search',
-            title: 'Testing'
-        }).addTo(map);
-        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
-        .className += ' fa fa-search';
-        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
-        .title += 'Search for a place';
+        
         var baseMaps = {};
         L.control.layers({
             "OpenStreetMap": layer_OpenStreetMap_0,
@@ -192,8 +194,6 @@
             "Niederschlagsradar": layer_radar_2,
 	    "MTB am Rursee": layer_mtb_1,
         },{collapsed:false}).addTo(map);
-        setBounds();
-
 	
         </script>
     </body>
