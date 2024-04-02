@@ -18,7 +18,7 @@
             margin: 0;
         }
         </style>
-        <title>GIS MTBamRursee</title
+        <title>GIS Powerman Alsdorf 2024</title
 	<link rel="icon" href="./pin.png">
     </head>
     <body>
@@ -137,7 +137,7 @@
         layer_mgrs_1;
         //map.addLayer(layer_mgrs_1);
         
-        var layer_mtb_1 = L.tileLayer('cache_mtb/{z}/{x}/{y}.png', {
+        var layer_powerman_1 = L.tileLayer('cache_powerman/{z}/{x}/{y}.png', {
             opacity: 0.75,
             attribution: '',
             minZoom: 6,
@@ -145,8 +145,8 @@
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
-        layer_mtb_1;
-        map.addLayer(layer_mtb_1);
+        layer_powerman_1;
+        //map.addLayer(layer_powerman_1);
             
         var layer_OpenStreetMap_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             opacity: 1.0,
@@ -192,7 +192,7 @@
             "UTMREF / MGRS": layer_mgrs_1,
             "Wetterwarnungen": layer_warnung_3,
             "Niederschlagsradar": layer_radar_2,
-	    "MTB am Rursee": layer_mtb_1,
+	    
         },{collapsed:false}).addTo(map);
 	
         </script>
