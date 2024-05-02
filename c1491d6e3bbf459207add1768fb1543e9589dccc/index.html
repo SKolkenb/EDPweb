@@ -148,6 +148,17 @@
         layer_powerman_1;
         map.addLayer(layer_powerman_1);
 
+	var layer_powerman_3 = L.tileLayer('cache_uhs/{z}/{x}/{y}.png', {
+            opacity: 1,
+            attribution: '',
+            minZoom: 6,
+            maxZoom: 18,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_powerman_3;
+        map.addLayer(layer_powerman_3);
+
 	var layer_powerman_2 = L.tileLayer('cache_laufen/{z}/{x}/{y}.png', {
             opacity: 1,
             attribution: '',
@@ -163,7 +174,7 @@
             opacity: 1.0,
             attribution: '',
             minZoom: 6,
-            maxZoom: 19,
+            maxZoom: 18,
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
@@ -174,7 +185,7 @@
             opacity: 1.0,
             attribution: '',
             minZoom: 6,
-            maxZoom: 19,
+            maxZoom: 18,
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
@@ -215,6 +226,7 @@
         },{
             "Powerman Radstrecke": layer_powerman_1,
 	    "Powerman Laufstrecke": layer_powerman_2,
+	    "UHS Powerman": layer_powerman_3,
             "LKW-befahrbare Waldwege": layer_lkw_1,
             "UTMREF / MGRS": layer_mgrs_1,
             "Wetterwarnungen": layer_warnung_3,
