@@ -137,18 +137,7 @@
         layer_mgrs_1;
         //map.addLayer(layer_mgrs_1);
         
-        var layer_powerman_1 = L.tileLayer('cache_fahren/{z}/{x}/{y}.png', {
-            opacity: 1,
-            attribution: '',
-            minZoom: 6,
-            maxZoom: 18,
-            minNativeZoom: 0,
-            maxNativeZoom: 19
-        });
-        layer_powerman_1;
-        map.addLayer(layer_powerman_1);
-
-	var layer_powerman_3 = L.tileLayer('cache_uhs/{z}/{x}/{y}.png', {
+        var layer_powerman_3 = L.tileLayer('cache_uhs/{z}/{x}/{y}.png', {
             opacity: 1,
             attribution: '',
             minZoom: 6,
@@ -158,6 +147,17 @@
         });
         layer_powerman_3;
         map.addLayer(layer_powerman_3);
+	
+	var layer_powerman_1 = L.tileLayer('cache_fahren/{z}/{x}/{y}.png', {
+            opacity: 1,
+            attribution: '',
+            minZoom: 6,
+            maxZoom: 18,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_powerman_1;
+        map.addLayer(layer_powerman_1);
 
 	var layer_powerman_2 = L.tileLayer('cache_laufen/{z}/{x}/{y}.png', {
             opacity: 1,
