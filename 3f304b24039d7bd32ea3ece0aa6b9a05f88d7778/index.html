@@ -44,7 +44,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:18, minZoom:6, doubleClickZoom: false
-        }).locate({maxZoom: 16});
+        });
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="#">S.Kolkenbrock</a> &middot; <a href="https://leafletjs.com">Leaflet</a> &middot; <a>OSM</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
