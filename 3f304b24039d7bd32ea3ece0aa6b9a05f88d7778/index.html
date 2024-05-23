@@ -199,6 +199,20 @@
         layer_dtk25_0;
         //map.addLayer(layer_dtk25_0);
 
+	var layer_dtk50_0 = L.tileLayer.wms('https://www.wms.nrw.de/geobasis/wms_nw_dtk50', {
+            layers: 'nw_dtk50_col',
+            format: 'image/png',
+            opacity: 1,
+            attribution: '',
+            transparent: 'true',
+            minZoom: 6,
+            maxZoom: 18,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_dtk50_0;
+        //map.addLayer(layer_dtk50_0);
+
 	var layer_google_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
             opacity: 1.0,
             attribution: '',
@@ -216,7 +230,8 @@
 	    "OpenTopoMap": layer_OpenTopoMap_0,
 	    "Google Hybrid": layer_google_0,
 	    "DTK": layer_dtk_0,
-	    "DTK25": layer_dtk25_0
+	    "DTK25": layer_dtk25_0,
+	    "DTK50": layer_dtk50_0
         },{
             
             "LKW-befahrbare Waldwege": layer_lkw_1,
