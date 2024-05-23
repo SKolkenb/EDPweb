@@ -76,6 +76,12 @@
             }
         ).addTo(map);
 
+	L.control.mouseCoordinate(
+		{
+			utm:true,utmref:true
+		}
+	).addTo(map);
+
 	    
         var osmGeocoder = new L.Control.Geocoder({
             collapsed: true,
