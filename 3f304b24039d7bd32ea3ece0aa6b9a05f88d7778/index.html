@@ -94,6 +94,38 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         setBounds();
+
+	// CC Icon
+	   var ccIcon = L.icon({
+	      iconUrl: 'cc-logo-black.png',
+	      iconSize: [35, 35],
+	      iconAnchor: [17, 17],
+	      popupAnchor: [0, -28]
+	   });  
+	 
+	  var xhr = new XMLHttpRequest();
+	  xhr.open('GET', 'data.geojson');
+	  xhr.setRequestHeader('Content-Type', 'application/json');
+	  xhr.onload = function() {
+	    if (xhr.status === 200) {
+	        L.geoJSON(JSON.parse(xhr.responseText), {
+	       // Marker Icon
+	       pointToLayer: function (feature, latlng) {
+	          return L.marker(latlng, {icon: ccIcon});
+	       },
+	       // Style
+	       style: function(feature) {
+	          return {color: '#808080', width:2};
+	       },
+		onEachFeature: function (feature, layer) {
+        layer.bindPopup("<b>" + feature.properties.name + '</b><br />'
+            + feature.properties.address);
+    }
+	    }).addTo(map);
+	    }
+	  };
+	  xhr.send();
+		
 	var layer_warnung_3 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
             layers: 'Warnungen_Landkreise',
             format: 'image/png',
