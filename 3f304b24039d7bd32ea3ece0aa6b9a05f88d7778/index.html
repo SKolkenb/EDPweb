@@ -104,12 +104,11 @@
 	   });  
 	 
 	  var xhr = new XMLHttpRequest();
-	var layer_geojson_4;
 	  xhr.open('GET', 'data.json');
 	  xhr.setRequestHeader('Content-Type', 'application/json');
 	  xhr.onload = function() {
 	    if (xhr.status === 200) {
-	       layer_geojson_4 = L.geoJSON(JSON.parse(xhr.responseText), {
+	       L.geoJSON(JSON.parse(xhr.responseText), {
 	       // Marker Icon
 	       pointToLayer: function (feature, latlng) {
 	          return L.marker(latlng, {icon: ccIcon});
@@ -270,8 +269,7 @@
             "LKW-befahrbare Waldwege": layer_lkw_1,
             "UTMREF / MGRS": layer_mgrs_1,
             "Wetterwarnungen": layer_warnung_3,
-            "Niederschlagsradar": layer_radar_2,
-	    "GeoJSON" : layer_geojson_4
+            "Niederschlagsradar": layer_radar_2
         },{collapsed:false}).addTo(map);
 	
         </script>
