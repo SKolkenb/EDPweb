@@ -110,7 +110,7 @@
 	      popupAnchor: [0, -28]
 	   });  */
 	 
-	  var xhr = new XMLHttpRequest();
+	/*  var xhr = new XMLHttpRequest();
 	  xhr.open('GET', 'data.json');
 	  xhr.setRequestHeader('Content-Type', 'application/json');
 	  xhr.onload = function() {
@@ -118,7 +118,7 @@
 	       L.geoJSON(JSON.parse(xhr.responseText), {
 	       // Marker Icon
 	       pointToLayer: function (feature, latlng) {
-	          return L.marker(latlng /*,{icon: ccIcon}*/);
+	          return L.marker(latlng);
 	       },
 	       // Style
 	       style: function(feature) {
@@ -131,8 +131,8 @@
 	    }).addTo(map);
 	    }
 	  };
-	  xhr.send();
-
+	  xhr.send();  */
+/*
 	$.getJSON("data.json", function(json) {
         var testlayer = L.geoJson(json),
             sliderControl = L.control.sliderControl({
@@ -152,7 +152,7 @@
         //And initialize the slider
         sliderControl.startSlider();
     });
-
+*/
 		
 	var layer_warnung_3 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
             layers: 'Warnungen_Landkreise',
