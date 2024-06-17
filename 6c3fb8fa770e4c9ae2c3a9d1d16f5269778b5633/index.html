@@ -109,19 +109,6 @@
         });
         layer_radar_2;
         //map.addLayer(layer_radar_2);
-
-        var layer_lkw_1 = L.tileLayer.wms('https://www.wms.nrw.de/umwelt/waldNRW?', {
-            layers: 'Waldwege_(für_Lösch-_und_Rettungsfahrzeuge)64455',
-            format: 'image/png',
-            opacity: 1,
-            attribution: '',
-            transparent: 'true',
-            minZoom: 6,
-            maxZoom: 18,
-            minNativeZoom: 0,
-            maxNativeZoom: 19
-        });
-        layer_lkw_1;
             
         var layer_mgrs_1 = L.tileLayer.wms('https://www.wms.nrw.de/geobasis/wms_nw_utmref?', {
             layers: 'WMS_NW_UTMREF',
@@ -171,7 +158,18 @@
         layer_mtb_3;
         map.addLayer(layer_mtb_3);
 
-	
+	var layer_lkw_1 = L.tileLayer.wms('https://www.wms.nrw.de/umwelt/waldNRW?', {
+            layers: 'Waldwege_(für_Lösch-_und_Rettungsfahrzeuge)64455',
+            format: 'image/png',
+            opacity: 1,
+            attribution: '',
+            transparent: 'true',
+            minZoom: 6,
+            maxZoom: 18,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_lkw_1;
             
         var layer_OpenStreetMap_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             opacity: 1.0,
