@@ -133,7 +133,7 @@
             maxNativeZoom: 19
         });
         layer_mtb_1;
-        map.addLayer(layer_mtb_1);
+       // map.addLayer(layer_mtb_1);
 
 
 	var layer_mtb_2 = L.tileLayer('cache_marathon/{z}/{x}/{y}.png', {
@@ -218,6 +218,20 @@
         layer_dtk_0;
         //map.addLayer(layer_dtk_0);
 
+	var layer_dtk_1 = L.tileLayer.wms('https://www.wms.nrw.de/geobasis/wms_nw_dtk', {
+            layers: 'nw_dtk_bw',
+            format: 'image/png',
+            opacity: 1,
+            attribution: '',
+            transparent: 'true',
+            minZoom: 6,
+            maxZoom: 18,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_dtk_1;
+        //map.addLayer(layer_dtk_1);
+
 	var layer_google_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
             opacity: 1.0,
             attribution: '',
@@ -235,16 +249,16 @@
 	    "OpenStreetMap": layer_OpenStreetMap_0,
 	    "OpenTopoMap": layer_OpenTopoMap_0,
             "DTK": layer_dtk_0,
+	    "DTK schwarz/weiß": layer_dtk_1,
 	    "Google Hybrid": layer_google_0,
         },{
-            
-            "LKW-befahrbare Waldwege": layer_lkw_1,
             "UTMREF / MGRS": layer_mgrs_1,
             "Wetterwarnungen": layer_warnung_3,
             "Niederschlagsradar": layer_radar_2,
-	    "MTB am Rursee": layer_mtb_1,
+	    "MTB am Rursee - ALT": layer_mtb_1,
 	    "MTB am Rursee - Marathonstrecke": layer_mtb_2,
 	    "MTB am Rursee - Kurzstrecke": layer_mtb_3,
+	    "LKW-befahrbare Waldwege": layer_lkw_1,
         },{collapsed:false}).addTo(map);
 	
         </script>
