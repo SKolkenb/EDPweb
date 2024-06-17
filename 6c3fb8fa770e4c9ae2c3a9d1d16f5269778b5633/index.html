@@ -147,6 +147,31 @@
         });
         layer_mtb_1;
         map.addLayer(layer_mtb_1);
+
+
+	var layer_mtb_2 = L.tileLayer('cache_marathon/{z}/{x}/{y}.png', {
+            opacity: 0.9,
+            attribution: '',
+            minZoom: 6,
+            maxZoom: 17,
+            minNativeZoom: 0,
+            maxNativeZoom: 17
+        });
+        layer_mtb_2;
+        map.addLayer(layer_mtb_2);
+
+	var layer_mtb_3 = L.tileLayer('cache_mtb/{z}/{x}/{y}.png', {
+            opacity: 0.9,
+            attribution: '',
+            minZoom: 6,
+            maxZoom: 17,
+            minNativeZoom: 0,
+            maxNativeZoom: 17
+        });
+        layer_mtb_3;
+        map.addLayer(layer_mtb_3);
+
+	
             
         var layer_OpenStreetMap_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             opacity: 1.0,
@@ -208,6 +233,8 @@
             "Wetterwarnungen": layer_warnung_3,
             "Niederschlagsradar": layer_radar_2,
 	    "MTB am Rursee": layer_mtb_1,
+	    "MTB am Rursee - Marathonstrecke": layer_mtb_2,
+	    "MTB am Rursee - Kurzstrecke": layer_mtb_3,
         },{collapsed:false}).addTo(map);
 	
         </script>
