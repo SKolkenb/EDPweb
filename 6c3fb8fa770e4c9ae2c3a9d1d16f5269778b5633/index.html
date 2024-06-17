@@ -170,6 +170,20 @@
         layer_OpenTopoMap_0;
         //map.addLayer(layer_OpenTopoMap_0);
 
+	var layer_dtk_0 = L.tileLayer.wms('https://www.wms.nrw.de/geobasis/wms_nw_dtk', {
+            layers: 'nw_dtk_col',
+            format: 'image/png',
+            opacity: 1,
+            attribution: '',
+            transparent: 'true',
+            minZoom: 6,
+            maxZoom: 18,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_dtk_0;
+        //map.addLayer(layer_dtk_0);
+
 	var layer_google_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
             opacity: 1.0,
             attribution: '',
@@ -185,6 +199,7 @@
         L.control.layers({
             "OpenStreetMap": layer_OpenStreetMap_0,
 	    "OpenTopoMap": layer_OpenTopoMap_0,
+            "DTK": layer_dtk_0,
 	    "Google Hybrid": layer_google_0,
         },{
             
