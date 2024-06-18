@@ -204,11 +204,14 @@
         layer_OpenTopoMap_0;
         //map.addLayer(layer_OpenTopoMap_0);
 
-	var layer_TopPlusOpen1_0 = L.tileLayer('https://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web/default/WEBMERCATOR/{z}/{x}/{y}.png', {
-            opacity: 1.0,
+	var layer_TopPlusOpen1_0 = L.tileLayer.wms('https://sgx.geodatenzentrum.de/wms_topplus_open?', {
+            layers: 'web_grau',
+            format: 'image/png',
+            opacity: 1,
             attribution: '',
+            transparent: 'true',
             minZoom: 6,
-            maxZoom: 17,
+            maxZoom: 18,
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
