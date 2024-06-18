@@ -204,6 +204,17 @@
         layer_OpenTopoMap_0;
         //map.addLayer(layer_OpenTopoMap_0);
 
+	var layer_TopPlusOpen_1 = L.tileLayer('https://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web/default/WEBMERCATOR/{z}/{x}/{y}.png', {
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 6,
+            maxZoom: 17,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_TopPlusOpen_1;
+        //map.addLayer(layer_TopPlusOpen_1);
+
 	var layer_TopPlusOpen_0 = L.tileLayer.wms('https://sgx.geodatenzentrum.de/wms_topplus_open_p100', {
             layers: 'grau',
             format: 'image/png',
@@ -265,6 +276,7 @@
             "DTK": layer_dtk_0,
 	    "DTK schwarz/weiß": layer_dtk_1,
 	    "Google Hybrid": layer_google_0,
+	    "Top Plus Open": layer_TopPlusOpen_1,
 	    "Top Plus Open": layer_TopPlusOpen_0
         },{
             "UTMREF / MGRS": layer_mgrs_1,
