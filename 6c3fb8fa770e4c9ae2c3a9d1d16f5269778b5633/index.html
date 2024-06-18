@@ -156,7 +156,7 @@
             maxNativeZoom: 17
         });
         layer_mtb_3;
-        map.addLayer(layer_mtb_3);
+        //map.addLayer(layer_mtb_3);
 
 	var layer_lkw_1 = L.tileLayer.wms('https://www.wms.nrw.de/umwelt/waldNRW?', {
             layers: 'Waldwege_(für_Lösch-_und_Rettungsfahrzeuge)64455',
@@ -259,7 +259,7 @@
 	    "MTB am Rursee - Marathonstrecke": layer_mtb_2,
 	    "MTB am Rursee - Kurzstrecke": layer_mtb_3,
 	    "LKW-befahrbare Waldwege": layer_lkw_1,
-        },{collapsed:false}).addTo(map);
+        },{collapsed:auto}).addTo(map);
 	
         </script>
     </body>
