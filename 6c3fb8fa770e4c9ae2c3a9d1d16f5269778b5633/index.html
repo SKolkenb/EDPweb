@@ -204,6 +204,20 @@
         layer_OpenTopoMap_0;
         //map.addLayer(layer_OpenTopoMap_0);
 
+	var layer_TopPlusOpen_0 = L.tileLayer.wms('https://sgx.geodatenzentrum.de/wms_topplus_open_p100', {
+            layers: 'grau',
+            format: 'image/png',
+            opacity: 1,
+            attribution: '',
+            transparent: 'true',
+            minZoom: 6,
+            maxZoom: 18,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_TopPlusOpen_0;
+        //map.addLayer(layer_TopPlusOpen_0);
+
 	var layer_dtk_0 = L.tileLayer.wms('https://www.wms.nrw.de/geobasis/wms_nw_dtk', {
             layers: 'nw_dtk_col',
             format: 'image/png',
@@ -251,6 +265,7 @@
             "DTK": layer_dtk_0,
 	    "DTK schwarz/weiß": layer_dtk_1,
 	    "Google Hybrid": layer_google_0,
+	    "Top Plus Open": layer_TopPlusOpen_0
         },{
             "UTMREF / MGRS": layer_mgrs_1,
             "Wetterwarnungen": layer_warnung_3,
