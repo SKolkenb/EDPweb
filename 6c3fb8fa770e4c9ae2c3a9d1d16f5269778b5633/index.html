@@ -37,7 +37,7 @@
         <script src="js/leaflet-measure.js"></script>
         <script>
         var map = L.map('map', {
-            zoomControl:true, maxZoom:17, minZoom:6, doubleClickZoom: false
+            zoomControl:true, maxZoom:19, minZoom:6, doubleClickZoom: false
         }).locate({setView: true, maxZoom: 16});
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="#">S.Kolkenbrock</a> &middot; <a href="https://leafletjs.com">Leaflet</a> &middot; <a>OSM</a>');
@@ -279,8 +279,9 @@
             "DTK": layer_dtk_0,
 	    "DTK schwarz/weiß": layer_dtk_1,
 	    "Google Hybrid": layer_google_0,
-	    "Top Plus Open1": layer_TopPlusOpen1_0,
-	    "Top Plus Open": layer_TopPlusOpen_0
+	    "Top Plus Open": layer_TopPlusOpen_0,
+	    "Top Plus Open schwarz/weiß": layer_TopPlusOpen1_0,
+	    
         },{
             "UTMREF / MGRS": layer_mgrs_1,
             "Wetterwarnungen": layer_warnung_3,
