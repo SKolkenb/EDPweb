@@ -38,9 +38,9 @@
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:19, minZoom:6, doubleClickZoom: false
-        }).locate({setView: true, maxZoom: 16});
+        }).locate({setView: true, maxZoom: 15});
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="#">S.Kolkenbrock</a> &middot; <a href="https://leafletjs.com">Leaflet</a> &middot; <a>OSM</a>');
+        map.attributionControl.setPrefix('<a href="mailto:steffen.kolkenbrock@malteser.org">S.Kolkenbrock</a> &middot; <a href="https://leafletjs.com">Leaflet</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         var locator = new L.control.locate({locateOptions: {maxZoom: 16}}).addTo(map);
 	locator.start();
@@ -82,16 +82,17 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         setBounds();
+		
 	var layer_warnung_3 = L.tileLayer.wms('https://maps.dwd.de/geoserver/dwd/wms?', {
             layers: 'Warnungen_Landkreise',
             format: 'image/png',
             opacity: 0.5,
             transparent: 'true',
-            attribution: '',
             minZoom: 6,
-            maxZoom: 18,
+            maxZoom: 19,
             minNativeZoom: 0,
-            maxNativeZoom: 19
+            maxNativeZoom: 18,
+	    attribution: 'Quelle: Deutscher Wetterdienst'
         });
         layer_warnung_3;
         //map.addLayer(layer_warnung_3);
@@ -101,11 +102,11 @@
             format: 'image/png',
             transparent: 'true',
             opacity: 0.5,
-            attribution: '',
             minZoom: 6,
-            maxZoom: 18,
+            maxZoom: 19,
             minNativeZoom: 0,
-            maxNativeZoom: 19
+            maxNativeZoom: 18,
+	    attribution: 'Quelle: Deutscher Wetterdienst'
         });
         layer_radar_2;
         //map.addLayer(layer_radar_2);
@@ -114,23 +115,21 @@
             layers: 'WMS_NW_UTMREF',
             format: 'image/png',
             opacity: 1,
-            attribution: '',
             transparent: 'true',
             minZoom: 6,
-            maxZoom: 18,
+            maxZoom: 19,
             minNativeZoom: 0,
-            maxNativeZoom: 19
+            maxNativeZoom: 18
         });
         layer_mgrs_1;
         //map.addLayer(layer_mgrs_1);
         
         var layer_mtb_1 = L.tileLayer('cache_mtb/{z}/{x}/{y}.png', {
             opacity: 0.75,
-            attribution: '',
             minZoom: 6,
-            maxZoom: 18,
+            maxZoom: 19,
             minNativeZoom: 0,
-            maxNativeZoom: 19
+            maxNativeZoom: 18
         });
         layer_mtb_1;
        // map.addLayer(layer_mtb_1);
@@ -138,22 +137,20 @@
 
 	var layer_mtb_2 = L.tileLayer('cache_marathon/{z}/{x}/{y}.png', {
             opacity: 0.9,
-            attribution: '',
             minZoom: 6,
             maxZoom: 19,
             minNativeZoom: 0,
-            maxNativeZoom: 17
+            maxNativeZoom: 18
         });
         layer_mtb_2;
         map.addLayer(layer_mtb_2);
 
 	var layer_mtb_3 = L.tileLayer('cache_kurzstrecke/{z}/{x}/{y}.png', {
             opacity: 0.9,
-            attribution: '',
             minZoom: 6,
             maxZoom: 19,
             minNativeZoom: 0,
-            maxNativeZoom: 17
+            maxNativeZoom: 18
         });
         layer_mtb_3;
         //map.addLayer(layer_mtb_3);
@@ -162,7 +159,6 @@
             layers: 'Waldwege_(für_Lösch-_und_Rettungsfahrzeuge)64455',
             format: 'image/png',
             opacity: 1,
-            attribution: '',
             transparent: 'true',
             minZoom: 6,
             maxZoom: 19,
@@ -173,29 +169,28 @@
             
         var layer_OpenStreetMap_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             opacity: 1.0,
-            attribution: '',
             minZoom: 6,
             maxZoom: 19,
             minNativeZoom: 0,
-            maxNativeZoom: 19
+            maxNativeZoom: 19,
+	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         });
         layer_OpenStreetMap_0;
         map.addLayer(layer_OpenStreetMap_0);
 
 	var layer_edpmap_0 = L.tileLayer('https://map.eifert-systems.de/{z}/{x}/{y}.png', {
             opacity: 1.0,
-            attribution: '',
             minZoom: 6,
             maxZoom: 19,
             minNativeZoom: 0,
-            maxNativeZoom: 18
+            maxNativeZoom: 17,
+	    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         });
         layer_edpmap_0;
         //map.addLayer(layer_edpmap_0);
 
         var layer_OpenTopoMap_0 = L.tileLayer('https://tile.opentopomap.org/{z}/{x}/{y}.png', {
             opacity: 1.0,
-            attribution: '',
             minZoom: 6,
             maxZoom: 19,
             minNativeZoom: 0,
@@ -208,12 +203,12 @@
             layers: 'web_grau',
             format: 'image/png',
             opacity: 1,
-            attribution: '',
             transparent: 'true',
             minZoom: 6,
-            maxZoom: 18,
+            maxZoom: 19,
             minNativeZoom: 0,
-            maxNativeZoom: 19
+            maxNativeZoom: 19,
+	    attribution: '<a href="www.bgk.bund.de">Kartendarstellung: &copy; Bundeamt für Kartographie und Geodäsie(2024)</a>, <a href="https://sgx.geodatenzentrum.de/web_public/Datenquellen_TopPlus_Open.pdf">Datenquellen</a>'
         });
         layer_TopPlusOpen1_0;
         //map.addLayer(layer_TopPlusOpen1_0);
@@ -222,12 +217,12 @@
             layers: 'web',
             format: 'image/png',
             opacity: 1,
-            attribution: '',
             transparent: 'true',
             minZoom: 6,
-            maxZoom: 18,
+            maxZoom: 19,
             minNativeZoom: 0,
-            maxNativeZoom: 19
+            maxNativeZoom: 19,
+	    attribution: '<a href="www.bgk.bund.de">Kartendarstellung: &copy; Bundeamt für Kartographie und Geodäsie(2024)</a>, <a href="https://sgx.geodatenzentrum.de/web_public/Datenquellen_TopPlus_Open.pdf">Datenquellen</a>'
         });
         layer_TopPlusOpen_0;
         //map.addLayer(layer_TopPlusOpen_0);
@@ -239,7 +234,7 @@
             attribution: '',
             transparent: 'true',
             minZoom: 6,
-            maxZoom: 18,
+            maxZoom: 19,
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
@@ -250,10 +245,9 @@
             layers: 'nw_dtk_sw',
             format: 'image/png',
             opacity: 1,
-            attribution: '',
             transparent: 'true',
             minZoom: 6,
-            maxZoom: 18,
+            maxZoom: 19,
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
@@ -262,14 +256,23 @@
 
 	var layer_google_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
             opacity: 1.0,
-            attribution: '',
             minZoom: 6,
-            maxZoom: 17,
+            maxZoom: 19,
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
         layer_google_0;
         //map.addLayer(layer_google_0);
+
+	var layer_google1_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
+            opacity: 1.0,
+            minZoom: 6,
+            maxZoom: 19,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_google1_0;
+        //map.addLayer(layer_google1_0);
         
         var baseMaps = {};
         L.control.layers({
@@ -278,10 +281,10 @@
 	    "OpenTopoMap": layer_OpenTopoMap_0,
             "DTK": layer_dtk_0,
 	    "DTK schwarz/weiß": layer_dtk_1,
-	    "Google Hybrid": layer_google_0,
 	    "Top Plus Open": layer_TopPlusOpen_0,
 	    "Top Plus Open schwarz/weiß": layer_TopPlusOpen1_0,
-	    
+	    "Google Hybrid": layer_google_0,
+	    "Google Gelände": layer_google1_0,
         },{
             "UTMREF / MGRS": layer_mgrs_1,
             "Wetterwarnungen": layer_warnung_3,
