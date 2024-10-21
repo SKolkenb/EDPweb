@@ -37,12 +37,12 @@
         <script src="js/leaflet-measure.js"></script>
         <script>
         var map = L.map('map', {
-            zoomControl:true, maxZoom:18, minZoom:6, doubleClickZoom: false
-        }).locate({setView: true, maxZoom: 16});
+            zoomControl:true, maxZoom:19, minZoom:6, doubleClickZoom: false
+        }).locate({setView: true, maxZoom: 18});
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
-        var locator = new L.control.locate({locateOptions: {maxZoom: 16}}).addTo(map);
+        var locator = new L.control.locate({locateOptions: {maxZoom: 18}}).addTo(map);
         locator.start();
         var measureControl = new L.Control.Measure({
             position: 'topleft',
