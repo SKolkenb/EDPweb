@@ -205,6 +205,26 @@
         });
         layer_xyz_1;
 		map.addLayer(layer_xyz_1);
+
+	var layer_xyz_2 = L.tileLayer('cache_ohneHintergrund/{z}/{x}/{y}.png', {
+            opacity: 1,
+            attribution: '',
+            minZoom: 6,
+            maxZoom: 21,
+            minNativeZoom: 16,
+            maxNativeZoom: 21
+        });
+        layer_xyz_2;
+
+	var layer_xyz_3 = L.tileLayer('cache_mitHintergrund/{z}/{x}/{y}.png', {
+            opacity: 1,
+            attribution: '',
+            minZoom: 6,
+            maxZoom: 21,
+            minNativeZoom: 16,
+            maxNativeZoom: 21
+        });
+        layer_xyz_3;
             
         var layer_mgrs_1 = L.tileLayer.wms('https://www.wms.nrw.de/geobasis/wms_nw_utmref?', {
             layers: 'WMS_NW_UTMREF',
@@ -302,13 +322,15 @@
 	    "Google Hybrid": layer_google_0,
 	    "DTK": layer_dtk_0,
 	    "DTK25": layer_dtk25_0,
-	    "DTK50": layer_dtk50_0
+	    "DTK50": layer_dtk50_0,
+	    "mitHintergrund": layer_xyz_3
         },{
             
             "LKW-befahrbare Waldwege": layer_lkw_1,
             "UTMREF / MGRS": layer_mgrs_1,
             "Wetterwarnungen": layer_warnung_3,
-            "Niederschlagsradar": layer_radar_2
+            "Niederschlagsradar": layer_radar_2,
+	    "ohneHintergrund": layer_xyz_2
         },{collapsed:false}).addTo(map);
 	
         </script>
