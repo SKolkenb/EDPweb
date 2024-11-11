@@ -1,0 +1,1330 @@
+[INFO]    Fast orthophoto is turned on, automatically setting --skip-3dmodel
+[INFO]    Initializing ODM 3.5.4 - Mon Nov 11 11:47:16  2024
+[INFO]    ==============
+[INFO]    3d_tiles: False
+[INFO]    align: None
+[INFO]    auto_boundary: True
+[INFO]    auto_boundary_distance: 0
+[INFO]    bg_removal: False
+[INFO]    boundary: {}
+[INFO]    build_overviews: False
+[INFO]    camera_lens: auto
+[INFO]    cameras: {}
+[INFO]    cog: True
+[INFO]    copy_to: None
+[INFO]    crop: 3
+[INFO]    dem_decimation: 1
+[INFO]    dem_euclidean_map: False
+[INFO]    dem_gapfill_steps: 3
+[INFO]    dem_resolution: 5
+[INFO]    dsm: False
+[INFO]    dtm: False
+[INFO]    end_with: odm_postprocess
+[INFO]    fast_orthophoto: True
+[INFO]    feature_quality: high
+[INFO]    feature_type: dspsift
+[INFO]    force_gps: False
+[INFO]    gcp: None
+[INFO]    geo: None
+[INFO]    gltf: True
+[INFO]    gps_accuracy: 3
+[INFO]    ignore_gsd: False
+[INFO]    matcher_neighbors: 0
+[INFO]    matcher_order: 0
+[INFO]    matcher_type: flann
+[INFO]    max_concurrency: 8
+[INFO]    merge: all
+[INFO]    mesh_octree_depth: 11
+[INFO]    mesh_size: 200000
+[INFO]    min_num_features: 10000
+[INFO]    name: 10a3d8b2-1b9c-4810-891d-ed1adde2b554
+[INFO]    no_gpu: False
+[INFO]    optimize_disk_space: False
+[INFO]    orthophoto_compression: DEFLATE
+[INFO]    orthophoto_cutline: False
+[INFO]    orthophoto_kmz: False
+[INFO]    orthophoto_no_tiled: False
+[INFO]    orthophoto_png: False
+[INFO]    orthophoto_resolution: 5
+[INFO]    pc_classify: False
+[INFO]    pc_copc: False
+[INFO]    pc_csv: False
+[INFO]    pc_ept: True
+[INFO]    pc_filter: 5
+[INFO]    pc_las: False
+[INFO]    pc_quality: medium
+[INFO]    pc_rectify: False
+[INFO]    pc_sample: 0
+[INFO]    pc_skip_geometric: False
+[INFO]    primary_band: auto
+[INFO]    project_path: /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554
+[INFO]    radiometric_calibration: none
+[INFO]    rerun: None
+[INFO]    rerun_all: False
+[INFO]    rerun_from: None
+[INFO]    rolling_shutter: False
+[INFO]    rolling_shutter_readout: 0
+[INFO]    sfm_algorithm: incremental
+[INFO]    sfm_no_partial: False
+[INFO]    skip_3dmodel: True
+[INFO]    skip_band_alignment: False
+[INFO]    skip_orthophoto: False
+[INFO]    skip_report: False
+[INFO]    sky_removal: False
+[INFO]    sm_cluster: None
+[INFO]    sm_no_align: False
+[INFO]    smrf_scalar: 1.25
+[INFO]    smrf_slope: 0.15
+[INFO]    smrf_threshold: 0.5
+[INFO]    smrf_window: 18.0
+[INFO]    split: 999999
+[INFO]    split_image_groups: None
+[INFO]    split_overlap: 150
+[INFO]    texturing_keep_unseen_faces: False
+[INFO]    texturing_single_material: False
+[INFO]    texturing_skip_global_seam_leveling: False
+[INFO]    tiles: False
+[INFO]    use_3dmesh: False
+[INFO]    use_exif: False
+[INFO]    use_fixed_camera_params: False
+[INFO]    use_hybrid_bundle_adjustment: False
+[INFO]    video_limit: 500
+[INFO]    video_resolution: 4000
+[INFO]    ==============
+[INFO]    Running dataset stage
+[INFO]    Loading dataset from: /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/images
+[INFO]    Loading 48 images
+[INFO]    Wrote images database: /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/images.json
+[INFO]    Found 48 usable images
+[INFO]    Finished dataset stage
+[INFO]    Running split stage
+[INFO]    Normal dataset, will process all at once.
+[INFO]    Finished split stage
+[INFO]    Running merge stage
+[INFO]    Normal dataset, nothing to merge.
+[INFO]    Finished merge stage
+[INFO]    Running opensfm stage
+[INFO]    Maximum photo dimensions: 4000px
+[INFO]    Photo dimensions for feature extraction: 2000px
+[INFO]    Altitude data detected, enabling it for GPS alignment
+[INFO]    ['use_exif_size: no', 'flann_algorithm: KDTREE', 'feature_process_size: 2000', 'feature_min_frames: 10000', 'processes: 8', 'matching_gps_neighbors: 0', 'matching_gps_distance: 0', 'matching_graph_rounds: 50', 'optimize_camera_parameters: yes', 'reconstruction_algorithm: incremental', 'undistorted_image_format: tif', 'bundle_outlier_filtering_type: AUTO', 'sift_peak_threshold: 0.066', 'align_orientation_prior: vertical', 'triangulation_type: ROBUST', 'retriangulation_ratio: 2', 'matcher_type: FLANN', 'feature_type: DSPSIFT', 'use_altitude_tag: yes', 'align_method: auto', 'local_bundle_radius: 0']
+[INFO]    Wrote reference_lla.json
+[INFO]    running "/code/SuperBuild/install/bin/opensfm/bin/opensfm" detect_features "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm"
+2024-11-11 11:47:18,795 INFO: Planning to use 2317.6546875 MB of RAM for both processing queue and parallel processing.
+2024-11-11 11:47:18,796 INFO: Scale-space expected size of a single image : 90.83747863769531 MB
+2024-11-11 11:47:18,796 INFO: Expecting to queue at most 25 images while parallel processing of 8 images.
+2024-11-11 11:47:18,800 INFO: Reading data for image DJI_20241111120104_0023_W.JPG (queue-size=0)
+2024-11-11 11:47:18,800 INFO: Reading data for image DJI_20241111120038_0012_W.JPG (queue-size=0)
+2024-11-11 11:47:18,800 INFO: Reading data for image DJI_20241111120018_0003_W.JPG (queue-size=0)
+2024-11-11 11:47:18,800 INFO: Reading data for image DJI_20241111120118_0029_W.JPG (queue-size=0)
+2024-11-11 11:47:19,180 INFO: Reading data for image DJI_20241111120147_0042_W.JPG (queue-size=1)
+2024-11-11 11:47:19,181 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120018_0003_W.JPG
+2024-11-11 11:47:19,206 INFO: Reading data for image DJI_20241111120049_0016_W.JPG (queue-size=1)
+2024-11-11 11:47:19,207 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120104_0023_W.JPG
+2024-11-11 11:47:19,310 INFO: Reading data for image DJI_20241111120133_0035_W.JPG (queue-size=1)
+2024-11-11 11:47:19,311 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120118_0029_W.JPG
+2024-11-11 11:47:19,329 INFO: Reading data for image DJI_20241111120045_0014_W.JPG (queue-size=1)
+2024-11-11 11:47:19,330 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120038_0012_W.JPG
+2024-11-11 11:47:20,584 INFO: Reading data for image DJI_20241111120125_0033_W.JPG (queue-size=1)
+2024-11-11 11:47:20,586 INFO: Reading data for image DJI_20241111120108_0024_W.JPG (queue-size=2)
+2024-11-11 11:47:20,645 INFO: Reading data for image DJI_20241111120139_0038_W.JPG (queue-size=3)
+2024-11-11 11:47:20,766 INFO: Reading data for image DJI_20241111120159_0046_W.JPG (queue-size=4)
+2024-11-11 11:47:21,414 INFO: Reading data for image DJI_20241111120029_0009_W.JPG (queue-size=5)
+2024-11-11 11:47:21,433 INFO: Reading data for image DJI_20241111120035_0011_W.JPG (queue-size=6)
+2024-11-11 11:47:21,608 INFO: Reading data for image DJI_20241111120016_0002_W.JPG (queue-size=7)
+2024-11-11 11:47:21,783 INFO: Reading data for image DJI_20241111120145_0041_W.JPG (queue-size=8)
+2024-11-11 11:47:22,254 INFO: Reading data for image DJI_20241111120026_0007_W.JPG (queue-size=9)
+2024-11-11 11:47:22,296 INFO: Reading data for image DJI_20241111120013_0001_W.JPG (queue-size=10)
+2024-11-11 11:47:22,312 INFO: Reading data for image DJI_20241111120032_0010_W.JPG (queue-size=11)
+2024-11-11 11:47:22,534 INFO: Reading data for image DJI_20241111120050_0017_W.JPG (queue-size=12)
+2024-11-11 11:47:22,928 INFO: Reading data for image DJI_20241111120116_0028_W.JPG (queue-size=13)
+2024-11-11 11:47:23,013 INFO: Reading data for image DJI_20241111120110_0025_W.JPG (queue-size=14)
+2024-11-11 11:47:23,016 INFO: Reading data for image DJI_20241111120130_0034_W.JPG (queue-size=15)
+2024-11-11 11:47:23,277 INFO: Reading data for image DJI_20241111120124_0032_W.JPG (queue-size=16)
+2024-11-11 11:47:23,600 INFO: Reading data for image DJI_20241111120028_0008_W.JPG (queue-size=17)
+2024-11-11 11:47:23,828 INFO: Reading data for image DJI_20241111120052_0018_W.JPG (queue-size=18)
+2024-11-11 11:47:23,891 INFO: Reading data for image DJI_20241111120201_0047_W.JPG (queue-size=19)
+2024-11-11 11:47:24,077 INFO: Reading data for image DJI_20241111120056_0020_W.JPG (queue-size=20)
+2024-11-11 11:47:24,352 INFO: Reading data for image DJI_20241111120122_0031_W.JPG (queue-size=21)
+2024-11-11 11:47:24,741 INFO: Reading data for image DJI_20241111120120_0030_W.JPG (queue-size=22)
+2024-11-11 11:47:24,825 INFO: Reading data for image DJI_20241111120020_0004_W.JPG (queue-size=23)
+2024-11-11 11:47:24,874 INFO: Reading data for image DJI_20241111120151_0044_W.JPG (queue-size=24)
+2024-11-11 11:47:25,235 INFO: Reading data for image DJI_20241111120143_0040_W.JPG (queue-size=25)
+2024-11-11 11:47:35,677 DEBUG: Found 10000 points in 16.312687397003174s
+2024-11-11 11:47:36,055 DEBUG: Found 10000 points in 16.854778051376343s
+2024-11-11 11:47:36,584 INFO: Reading data for image DJI_20241111120054_0019_W.JPG (queue-size=25)
+2024-11-11 11:47:36,584 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120147_0042_W.JPG
+2024-11-11 11:47:36,637 DEBUG: Found 10000 points in 17.3009934425354s
+2024-11-11 11:47:36,894 INFO: Reading data for image DJI_20241111120137_0037_W.JPG (queue-size=25)
+2024-11-11 11:47:36,894 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120133_0035_W.JPG
+2024-11-11 11:47:37,798 INFO: Reading data for image DJI_20241111120112_0026_W.JPG (queue-size=25)
+2024-11-11 11:47:37,799 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120049_0016_W.JPG
+2024-11-11 11:47:39,111 DEBUG: Found 9748 points in 19.88334584236145s
+2024-11-11 11:47:39,910 INFO: Reading data for image DJI_20241111120024_0006_W.JPG (queue-size=25)
+2024-11-11 11:47:39,910 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120045_0014_W.JPG
+2024-11-11 11:47:50,894 DEBUG: Found 10000 points in 13.98527479171753s
+2024-11-11 11:47:51,661 INFO: Reading data for image DJI_20241111120022_0005_W.JPG (queue-size=25)
+2024-11-11 11:47:51,662 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120108_0024_W.JPG
+2024-11-11 11:47:51,760 DEBUG: Found 10000 points in 13.945472240447998s
+2024-11-11 11:47:52,926 INFO: Reading data for image DJI_20241111120141_0039_W.JPG (queue-size=25)
+2024-11-11 11:47:52,927 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120125_0033_W.JPG
+2024-11-11 11:47:53,769 DEBUG: Found 10000 points in 13.847654342651367s
+2024-11-11 11:47:54,383 DEBUG: Found 9904 points in 17.784947156906128s
+2024-11-11 11:47:54,985 INFO: Reading data for image DJI_20241111120100_0022_W.JPG (queue-size=25)
+2024-11-11 11:47:54,986 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120159_0046_W.JPG
+2024-11-11 11:47:55,512 INFO: Reading data for image DJI_20241111120043_0013_W.JPG (queue-size=25)
+2024-11-11 11:47:55,513 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120139_0038_W.JPG
+2024-11-11 11:48:10,077 DEBUG: Found 9241 points in 18.404621124267578s
+2024-11-11 11:48:10,390 DEBUG: Found 10000 points in 14.862683057785034s
+2024-11-11 11:48:10,804 INFO: Reading data for image DJI_20241111120114_0027_W.JPG (queue-size=25)
+2024-11-11 11:48:10,804 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120035_0011_W.JPG
+2024-11-11 11:48:11,141 INFO: Reading data for image DJI_20241111120203_0048_W.JPG (queue-size=25)
+2024-11-11 11:48:11,141 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120029_0009_W.JPG
+2024-11-11 11:48:12,541 DEBUG: Found 10000 points in 19.59646964073181s
+2024-11-11 11:48:13,015 DEBUG: Found 9659 points in 18.013262271881104s
+2024-11-11 11:48:13,619 INFO: Reading data for image DJI_20241111120149_0043_W.JPG (queue-size=25)
+2024-11-11 11:48:13,619 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120016_0002_W.JPG
+2024-11-11 11:48:14,415 INFO: Reading data for image DJI_20241111120058_0021_W.JPG (queue-size=25)
+2024-11-11 11:48:14,416 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120145_0041_W.JPG
+2024-11-11 11:48:26,900 DEBUG: Found 10000 points in 16.085272550582886s
+2024-11-11 11:48:27,742 INFO: Reading data for image DJI_20241111120155_0045_W.JPG (queue-size=25)
+2024-11-11 11:48:27,743 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120026_0007_W.JPG
+2024-11-11 11:48:27,898 DEBUG: Found 10000 points in 16.745476484298706s
+2024-11-11 11:48:28,798 INFO: Reading data for image DJI_20241111120046_0015_W.JPG (queue-size=25)
+2024-11-11 11:48:28,798 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120032_0010_W.JPG
+2024-11-11 11:48:31,233 DEBUG: Found 10000 points in 16.801135063171387s
+2024-11-11 11:48:31,824 DEBUG: Found 10000 points in 18.190088748931885s
+2024-11-11 11:48:32,285 INFO: Reading data for image DJI_20241111120136_0036_W.JPG (queue-size=25)
+2024-11-11 11:48:32,285 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120013_0001_W.JPG
+2024-11-11 11:48:32,804 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120116_0028_W.JPG
+2024-11-11 11:48:32,806 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120050_0017_W.JPG
+2024-11-11 11:48:32,814 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120130_0034_W.JPG
+2024-11-11 11:48:32,815 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120110_0025_W.JPG
+2024-11-11 11:48:32,980 INFO: Finished reading images
+2024-11-11 11:48:50,393 DEBUG: Found 10000 points in 22.640207052230835s
+2024-11-11 11:48:51,328 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120124_0032_W.JPG
+2024-11-11 11:48:51,330 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120028_0008_W.JPG
+2024-11-11 11:48:52,605 DEBUG: Found 10000 points in 23.795403242111206s
+2024-11-11 11:48:54,670 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120052_0018_W.JPG
+2024-11-11 11:48:57,786 DEBUG: Found 10000 points in 24.960840225219727s
+2024-11-11 11:48:59,194 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120056_0020_W.JPG
+2024-11-11 11:48:59,858 DEBUG: Found 10000 points in 27.00452446937561s
+2024-11-11 11:49:01,302 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120201_0047_W.JPG
+2024-11-11 11:49:01,916 DEBUG: Found 9335 points in 29.615805625915527s
+2024-11-11 11:49:02,935 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120122_0031_W.JPG
+2024-11-11 11:49:05,398 DEBUG: Found 9884 points in 32.541106939315796s
+2024-11-11 11:49:06,155 DEBUG: Found 9975 points in 33.3275043964386s
+2024-11-11 11:49:06,641 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120120_0030_W.JPG
+2024-11-11 11:49:08,079 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120020_0004_W.JPG
+2024-11-11 11:49:19,035 DEBUG: Found 10000 points in 27.678797245025635s
+2024-11-11 11:49:19,729 DEBUG: Found 10000 points in 28.36857032775879s
+2024-11-11 11:49:20,074 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120151_0044_W.JPG
+2024-11-11 11:49:21,121 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120143_0040_W.JPG
+2024-11-11 11:49:28,248 DEBUG: Found 9798 points in 33.56347179412842s
+2024-11-11 11:49:29,174 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120054_0019_W.JPG
+2024-11-11 11:49:29,276 DEBUG: Found 10000 points in 27.94897174835205s
+2024-11-11 11:49:29,699 DEBUG: Found 10000 points in 26.73772120475769s
+2024-11-11 11:49:30,413 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120137_0037_W.JPG
+2024-11-11 11:49:31,058 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120112_0026_W.JPG
+2024-11-11 11:49:32,436 DEBUG: Found 9652 points in 33.213515281677246s
+2024-11-11 11:49:33,736 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120024_0006_W.JPG
+2024-11-11 11:49:34,740 DEBUG: Found 10000 points in 28.076743125915527s
+2024-11-11 11:49:35,556 DEBUG: Found 10000 points in 27.42336344718933s
+2024-11-11 11:49:36,054 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120022_0005_W.JPG
+2024-11-11 11:49:37,064 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120141_0039_W.JPG
+2024-11-11 11:49:46,805 DEBUG: Found 10000 points in 25.655094861984253s
+2024-11-11 11:49:48,046 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120100_0022_W.JPG
+2024-11-11 11:49:48,984 DEBUG: Found 9409 points in 28.883034229278564s
+2024-11-11 11:49:50,303 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120043_0013_W.JPG
+2024-11-11 11:49:55,822 DEBUG: Found 10000 points in 25.38542127609253s
+2024-11-11 11:49:57,372 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120114_0027_W.JPG
+2024-11-11 11:49:58,670 DEBUG: Found 10000 points in 24.895716190338135s
+2024-11-11 11:49:59,018 DEBUG: Found 10000 points in 27.91755747795105s
+2024-11-11 11:50:00,237 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120203_0048_W.JPG
+2024-11-11 11:50:00,570 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120149_0043_W.JPG
+2024-11-11 11:50:01,433 DEBUG: Found 9798 points in 32.24678111076355s
+2024-11-11 11:50:02,004 DEBUG: Found 10000 points in 24.894280672073364s
+2024-11-11 11:50:02,843 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120058_0021_W.JPG
+2024-11-11 11:50:03,401 DEBUG: Found 10000 points in 27.322994470596313s
+2024-11-11 11:50:03,666 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120155_0045_W.JPG
+2024-11-11 11:50:04,467 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120046_0015_W.JPG
+2024-11-11 11:50:16,199 DEBUG: Found 10000 points in 25.824512481689453s
+2024-11-11 11:50:17,267 INFO: Extracting ROOT_DSPSIFT features for image DJI_20241111120136_0036_W.JPG
+2024-11-11 11:50:18,880 DEBUG: Found 9757 points in 30.811423778533936s
+2024-11-11 11:50:22,863 DEBUG: Found 10000 points in 25.475805044174194s
+2024-11-11 11:50:27,424 DEBUG: Found 10000 points in 27.152982473373413s
+2024-11-11 11:50:28,577 DEBUG: Found 10000 points in 24.08861207962036s
+2024-11-11 11:50:28,901 DEBUG: Found 9422 points in 28.31754183769226s
+2024-11-11 11:50:31,199 DEBUG: Found 9207 points in 27.52019453048706s
+2024-11-11 11:50:31,730 DEBUG: Found 9603 points in 28.849932193756104s
+2024-11-11 11:50:34,484 DEBUG: Found 10000 points in 17.198925018310547s
+[INFO]    running "/code/SuperBuild/install/bin/opensfm/bin/opensfm" match_features "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm"
+2024-11-11 11:50:37,121 INFO: Altitude is negative (-830.8228632709234) : viewing directions are probably divergent. Using default altitude of 1.0
+2024-11-11 11:50:37,121 INFO: Altitude for orientation based matching 1.0
+2024-11-11 11:50:37,163 INFO: Matching 360 image pairs
+2024-11-11 11:50:37,176 INFO: Computing pair matching with 7 processes
+2024-11-11 11:50:38,031 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120147_0042_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.838 T-robust: 0.005 T-total: 0.847 Matches: 638 Robust: 579 Success: True
+2024-11-11 11:50:38,034 DEBUG: Matching DJI_20241111120108_0024_W.JPG and DJI_20241111120149_0043_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.828 T-robust: 0.019 T-total: 0.850 Matches: 1057 Robust: 970 Success: True
+2024-11-11 11:50:38,083 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120120_0030_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.890 T-robust: 0.010 T-total: 0.900 Matches: 177 Robust: 137 Success: True
+2024-11-11 11:50:38,092 DEBUG: Matching DJI_20241111120028_0008_W.JPG and DJI_20241111120046_0015_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.894 T-robust: 0.013 T-total: 0.909 Matches: 869 Robust: 816 Success: True
+2024-11-11 11:50:38,099 DEBUG: Matching DJI_20241111120125_0033_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.904 T-robust: 0.010 T-total: 0.915 Matches: 442 Robust: 357 Success: True
+2024-11-11 11:50:38,103 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120052_0018_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.899 T-robust: 0.015 T-total: 0.920 Matches: 2099 Robust: 2000 Success: True
+2024-11-11 11:50:38,108 DEBUG: Matching DJI_20241111120043_0013_W.JPG and DJI_20241111120038_0012_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.903 T-robust: 0.020 T-total: 0.924 Matches: 1408 Robust: 1187 Success: True
+2024-11-11 11:50:38,775 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120050_0017_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.664 T-robust: 0.005 T-total: 0.672 Matches: 536 Robust: 484 Success: True
+2024-11-11 11:50:38,805 DEBUG: Matching DJI_20241111120043_0013_W.JPG and DJI_20241111120046_0015_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.690 T-robust: 0.012 T-total: 0.706 Matches: 880 Robust: 733 Success: True
+2024-11-11 11:50:39,147 DEBUG: Matching DJI_20241111120043_0013_W.JPG and DJI_20241111120124_0032_W.JPG.  Matcher: FLANN (symmetric) T-desc: 1.029 T-robust: 0.006 T-total: 1.039 Matches: 832 Robust: 762 Success: True
+2024-11-11 11:50:39,349 DEBUG: Matching DJI_20241111120056_0020_W.JPG and DJI_20241111120058_0021_W.JPG.  Matcher: FLANN (symmetric) T-desc: 1.299 T-robust: 0.011 T-total: 1.315 Matches: 2789 Robust: 2551 Success: True
+2024-11-11 11:50:39,433 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120203_0048_W.JPG.  Matcher: FLANN (symmetric) T-desc: 1.393 T-robust: 0.004 T-total: 1.399 Matches: 160 Robust: 122 Success: True
+2024-11-11 11:50:39,446 DEBUG: Matching DJI_20241111120016_0002_W.JPG and DJI_20241111120100_0022_W.JPG.  Matcher: FLANN (symmetric) T-desc: 1.353 T-robust: 0.006 T-total: 1.363 Matches: 675 Robust: 577 Success: True
+2024-11-11 11:50:39,456 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120056_0020_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.644 T-robust: 0.006 T-total: 0.650 Matches: 300 Robust: 234 Success: True
+2024-11-11 11:50:39,520 DEBUG: Matching DJI_20241111120118_0029_W.JPG and DJI_20241111120049_0016_W.JPG.  Matcher: FLANN (symmetric) T-desc: 1.417 T-robust: 0.009 T-total: 1.428 Matches: 696 Robust: 616 Success: True
+2024-11-11 11:50:39,935 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120018_0003_W.JPG.  Matcher: FLANN (symmetric) T-desc: 1.151 T-robust: 0.006 T-total: 1.159 Matches: 957 Robust: 787 Success: True
+2024-11-11 11:50:40,418 DEBUG: Matching DJI_20241111120038_0012_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.965 T-robust: 0.003 T-total: 0.969 Matches: 362 Robust: 322 Success: True
+2024-11-11 11:50:40,424 DEBUG: Matching DJI_20241111120046_0015_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.983 T-robust: 0.003 T-total: 0.987 Matches: 391 Robust: 359 Success: True
+2024-11-11 11:50:40,447 DEBUG: Matching DJI_20241111120110_0025_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 1.293 T-robust: 0.006 T-total: 1.299 Matches: 332 Robust: 279 Success: True
+2024-11-11 11:50:40,578 DEBUG: Matching DJI_20241111120145_0041_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 1.030 T-robust: 0.016 T-total: 1.055 Matches: 2396 Robust: 2340 Success: True
+2024-11-11 11:50:40,617 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120118_0029_W.JPG.  Matcher: FLANN (symmetric) T-desc: 1.152 T-robust: 0.006 T-total: 1.160 Matches: 804 Robust: 736 Success: True
+2024-11-11 11:50:40,760 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 1.395 T-robust: 0.010 T-total: 1.410 Matches: 2052 Robust: 1931 Success: True
+2024-11-11 11:50:40,845 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120116_0028_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.897 T-robust: 0.008 T-total: 0.909 Matches: 2031 Robust: 1754 Success: True
+2024-11-11 11:50:40,884 DEBUG: Matching DJI_20241111120145_0041_W.JPG and DJI_20241111120108_0024_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.463 T-robust: 0.002 T-total: 0.466 Matches: 386 Robust: 343 Success: True
+2024-11-11 11:50:40,928 DEBUG: Matching DJI_20241111120046_0015_W.JPG and DJI_20241111120120_0030_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.477 T-robust: 0.002 T-total: 0.480 Matches: 726 Robust: 657 Success: True
+2024-11-11 11:50:40,995 DEBUG: Matching DJI_20241111120108_0024_W.JPG and DJI_20241111120110_0025_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.406 T-robust: 0.006 T-total: 0.417 Matches: 2153 Robust: 2105 Success: True
+2024-11-11 11:50:41,119 DEBUG: Matching DJI_20241111120052_0018_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.687 T-robust: 0.006 T-total: 0.694 Matches: 985 Robust: 793 Success: True
+2024-11-11 11:50:41,202 DEBUG: Matching DJI_20241111120143_0040_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.439 T-robust: 0.002 T-total: 0.442 Matches: 156 Robust: 119 Success: True
+2024-11-11 11:50:41,212 DEBUG: Matching DJI_20241111120020_0004_W.JPG and DJI_20241111120056_0020_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.590 T-robust: 0.003 T-total: 0.594 Matches: 563 Robust: 498 Success: True
+2024-11-11 11:50:41,356 DEBUG: Matching DJI_20241111120122_0031_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.420 T-robust: 0.005 T-total: 0.427 Matches: 1127 Robust: 972 Success: True
+2024-11-11 11:50:41,446 DEBUG: Matching DJI_20241111120151_0044_W.JPG and DJI_20241111120108_0024_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.558 T-robust: 0.003 T-total: 0.562 Matches: 598 Robust: 540 Success: True
+2024-11-11 11:50:41,452 DEBUG: Matching DJI_20241111120159_0046_W.JPG and DJI_20241111120110_0025_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.603 T-robust: 0.003 T-total: 0.606 Matches: 207 Robust: 170 Success: True
+2024-11-11 11:50:41,487 DEBUG: Matching DJI_20241111120133_0035_W.JPG and DJI_20241111120125_0033_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.486 T-robust: 0.003 T-total: 0.491 Matches: 1011 Robust: 937 Success: True
+2024-11-11 11:50:41,638 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.428 T-robust: 0.005 T-total: 0.435 Matches: 942 Robust: 795 Success: True
+2024-11-11 11:50:41,640 DEBUG: Matching DJI_20241111120133_0035_W.JPG and DJI_20241111120038_0012_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.519 T-robust: 0.001 T-total: 0.521 Matches: 185 Robust: 150 Success: True
+2024-11-11 11:50:41,816 DEBUG: Matching DJI_20241111120124_0032_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.600 T-robust: 0.003 T-total: 0.604 Matches: 432 Robust: 361 Success: True
+2024-11-11 11:50:41,870 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120145_0041_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.419 T-robust: 0.003 T-total: 0.423 Matches: 365 Robust: 281 Success: True
+2024-11-11 11:50:41,927 DEBUG: Matching DJI_20241111120159_0046_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.405 T-robust: 0.034 T-total: 0.439 Matches: 20 Robust: 10 Success: False
+2024-11-11 11:50:41,953 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120022_0005_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.591 T-robust: 0.004 T-total: 0.597 Matches: 890 Robust: 771 Success: True
+2024-11-11 11:50:42,065 DEBUG: Matching DJI_20241111120124_0032_W.JPG and DJI_20241111120130_0034_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.415 T-robust: 0.006 T-total: 0.424 Matches: 1518 Robust: 1420 Success: True
+2024-11-11 11:50:42,126 DEBUG: Matching DJI_20241111120130_0034_W.JPG and DJI_20241111120038_0012_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.662 T-robust: 0.009 T-total: 0.674 Matches: 635 Robust: 573 Success: True
+2024-11-11 11:50:42,134 DEBUG: Matching DJI_20241111120016_0002_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.482 T-robust: 0.010 T-total: 0.496 Matches: 1043 Robust: 866 Success: True
+2024-11-11 11:50:42,474 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120049_0016_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.598 T-robust: 0.003 T-total: 0.602 Matches: 212 Robust: 179 Success: True
+2024-11-11 11:50:42,516 DEBUG: Matching DJI_20241111120046_0015_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.550 T-robust: 0.008 T-total: 0.559 Matches: 158 Robust: 117 Success: True
+2024-11-11 11:50:42,591 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120024_0006_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.767 T-robust: 0.005 T-total: 0.773 Matches: 712 Robust: 585 Success: True
+2024-11-11 11:50:42,726 DEBUG: Matching DJI_20241111120024_0006_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.655 T-robust: 0.005 T-total: 0.661 Matches: 280 Robust: 211 Success: True
+2024-11-11 11:50:42,799 DEBUG: Matching DJI_20241111120028_0008_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.653 T-robust: 0.010 T-total: 0.664 Matches: 95 Robust: 61 Success: True
+2024-11-11 11:50:42,876 DEBUG: Matching DJI_20241111120052_0018_W.JPG and DJI_20241111120110_0025_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.730 T-robust: 0.006 T-total: 0.740 Matches: 676 Robust: 575 Success: True
+2024-11-11 11:50:42,878 DEBUG: Matching DJI_20241111120026_0007_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.941 T-robust: 0.004 T-total: 0.950 Matches: 218 Robust: 170 Success: True
+2024-11-11 11:50:43,054 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.576 T-robust: 0.003 T-total: 0.580 Matches: 235 Robust: 187 Success: True
+2024-11-11 11:50:43,186 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.581 T-robust: 0.012 T-total: 0.594 Matches: 432 Robust: 325 Success: True
+2024-11-11 11:50:43,360 DEBUG: Matching DJI_20241111120125_0033_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.629 T-robust: 0.004 T-total: 0.633 Matches: 229 Robust: 180 Success: True
+2024-11-11 11:50:43,410 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120046_0015_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.607 T-robust: 0.003 T-total: 0.611 Matches: 144 Robust: 118 Success: True
+2024-11-11 11:50:43,441 DEBUG: Matching DJI_20241111120141_0039_W.JPG and DJI_20241111120133_0035_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.920 T-robust: 0.004 T-total: 0.924 Matches: 179 Robust: 141 Success: True
+2024-11-11 11:50:43,577 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120145_0041_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.690 T-robust: 0.006 T-total: 0.699 Matches: 802 Robust: 697 Success: True
+2024-11-11 11:50:43,731 DEBUG: Matching DJI_20241111120104_0023_W.JPG and DJI_20241111120108_0024_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.835 T-robust: 0.012 T-total: 0.854 Matches: 2185 Robust: 2019 Success: True
+2024-11-11 11:50:43,780 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.715 T-robust: 0.006 T-total: 0.724 Matches: 735 Robust: 669 Success: True
+2024-11-11 11:50:43,914 DEBUG: Matching DJI_20241111120110_0025_W.JPG and DJI_20241111120147_0042_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.715 T-robust: 0.007 T-total: 0.726 Matches: 1058 Robust: 993 Success: True
+2024-11-11 11:50:43,997 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120028_0008_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.555 Matches: FAILED
+2024-11-11 11:50:44,047 DEBUG: Matching DJI_20241111120016_0002_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.636 Matches: FAILED
+2024-11-11 11:50:44,064 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.692 T-robust: 0.008 T-total: 0.701 Matches: 155 Robust: 130 Success: True
+2024-11-11 11:50:44,198 DEBUG: Matching DJI_20241111120018_0003_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.611 T-robust: 0.008 T-total: 0.620 Matches: 68 Robust: 46 Success: True
+2024-11-11 11:50:44,264 DEBUG: Matching DJI_20241111120028_0008_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.528 T-robust: 0.003 T-total: 0.532 Matches: 224 Robust: 180 Success: True
+2024-11-11 11:50:44,428 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120120_0030_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.644 T-robust: 0.003 T-total: 0.648 Matches: 398 Robust: 343 Success: True
+2024-11-11 11:50:44,546 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120116_0028_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.544 T-robust: 0.003 T-total: 0.549 Matches: 718 Robust: 652 Success: True
+2024-11-11 11:50:44,574 DEBUG: Matching DJI_20241111120016_0002_W.JPG and DJI_20241111120028_0008_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.527 Matches: FAILED
+2024-11-11 11:50:44,612 DEBUG: Matching DJI_20241111120108_0024_W.JPG and DJI_20241111120058_0021_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.539 T-robust: 0.006 T-total: 0.548 Matches: 1436 Robust: 1225 Success: True
+2024-11-11 11:50:44,658 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120028_0008_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.392 T-robust: 0.001 T-total: 0.394 Matches: 397 Robust: 343 Success: True
+2024-11-11 11:50:44,668 DEBUG: Matching DJI_20241111120151_0044_W.JPG and DJI_20241111120201_0047_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.464 T-robust: 0.005 T-total: 0.469 Matches: 181 Robust: 139 Success: True
+2024-11-11 11:50:44,673 DEBUG: Matching DJI_20241111120145_0041_W.JPG and DJI_20241111120201_0047_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.752 T-robust: 0.005 T-total: 0.758 Matches: 827 Robust: 714 Success: True
+2024-11-11 11:50:44,899 DEBUG: Matching DJI_20241111120026_0007_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.468 T-robust: 0.002 T-total: 0.470 Matches: 158 Robust: 124 Success: True
+2024-11-11 11:50:44,977 DEBUG: Matching DJI_20241111120046_0015_W.JPG and DJI_20241111120024_0006_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.427 T-robust: 0.003 T-total: 0.430 Matches: 510 Robust: 419 Success: True
+2024-11-11 11:50:44,999 DEBUG: Matching DJI_20241111120016_0002_W.JPG and DJI_20241111120110_0025_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.421 T-robust: 0.003 T-total: 0.424 Matches: 465 Robust: 427 Success: True
+2024-11-11 11:50:45,036 DEBUG: Matching DJI_20241111120043_0013_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.420 T-robust: 0.003 T-total: 0.424 Matches: 651 Robust: 569 Success: True
+2024-11-11 11:50:45,084 DEBUG: Matching DJI_20241111120118_0029_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.418 T-robust: 0.005 T-total: 0.425 Matches: 706 Robust: 587 Success: True
+2024-11-11 11:50:45,146 DEBUG: Matching DJI_20241111120100_0022_W.JPG and DJI_20241111120110_0025_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.471 T-robust: 0.005 T-total: 0.478 Matches: 651 Robust: 577 Success: True
+2024-11-11 11:50:45,435 DEBUG: Matching DJI_20241111120054_0019_W.JPG and DJI_20241111120022_0005_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.755 T-robust: 0.004 T-total: 0.760 Matches: 399 Robust: 331 Success: True
+2024-11-11 11:50:45,490 DEBUG: Matching DJI_20241111120145_0041_W.JPG and DJI_20241111120147_0042_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.566 T-robust: 0.015 T-total: 0.590 Matches: 2580 Robust: 2520 Success: True
+2024-11-11 11:50:45,508 DEBUG: Matching DJI_20241111120028_0008_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.526 T-robust: 0.004 T-total: 0.531 Matches: 484 Robust: 421 Success: True
+2024-11-11 11:50:45,543 DEBUG: Matching DJI_20241111120151_0044_W.JPG and DJI_20241111120147_0042_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.535 T-robust: 0.006 T-total: 0.543 Matches: 956 Robust: 802 Success: True
+2024-11-11 11:50:45,598 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120201_0047_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.555 T-robust: 0.006 T-total: 0.561 Matches: 176 Robust: 127 Success: True
+2024-11-11 11:50:45,682 DEBUG: Matching DJI_20241111120043_0013_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.529 T-robust: 0.005 T-total: 0.535 Matches: 854 Robust: 730 Success: True
+2024-11-11 11:50:45,940 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120145_0041_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.850 T-robust: 0.005 T-total: 0.855 Matches: 155 Robust: 114 Success: True
+2024-11-11 11:50:46,032 DEBUG: Matching DJI_20241111120122_0031_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.589 T-robust: 0.005 T-total: 0.597 Matches: 750 Robust: 683 Success: True
+2024-11-11 11:50:46,043 DEBUG: Matching DJI_20241111120100_0022_W.JPG and DJI_20241111120159_0046_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.548 T-robust: 0.003 T-total: 0.552 Matches: 129 Robust: 111 Success: True
+2024-11-11 11:50:46,099 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120038_0012_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.583 T-robust: 0.005 T-total: 0.589 Matches: 645 Robust: 589 Success: True
+2024-11-11 11:50:46,139 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.587 T-robust: 0.008 T-total: 0.595 Matches: 89 Robust: 60 Success: True
+2024-11-11 11:50:46,199 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120046_0015_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.594 T-robust: 0.005 T-total: 0.600 Matches: 455 Robust: 374 Success: True
+2024-11-11 11:50:46,576 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120130_0034_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.628 T-robust: 0.005 T-total: 0.633 Matches: 287 Robust: 220 Success: True
+2024-11-11 11:50:46,680 DEBUG: Matching DJI_20241111120108_0024_W.JPG and DJI_20241111120155_0045_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.989 T-robust: 0.003 T-total: 0.997 Matches: 218 Robust: 181 Success: True
+2024-11-11 11:50:46,709 DEBUG: Matching DJI_20241111120046_0015_W.JPG and DJI_20241111120116_0028_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.667 T-robust: 0.007 T-total: 0.676 Matches: 448 Robust: 375 Success: True
+2024-11-11 11:50:46,720 DEBUG: Matching DJI_20241111120043_0013_W.JPG and DJI_20241111120028_0008_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.661 T-robust: 0.013 T-total: 0.676 Matches: 632 Robust: 535 Success: True
+2024-11-11 11:50:46,723 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120124_0032_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.614 T-robust: 0.008 T-total: 0.624 Matches: 312 Robust: 280 Success: True
+2024-11-11 11:50:46,814 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.608 T-robust: 0.005 T-total: 0.615 Matches: 396 Robust: 307 Success: True
+2024-11-11 11:50:46,861 DEBUG: Matching DJI_20241111120201_0047_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.710 T-robust: 0.011 T-total: 0.721 Matches: 56 Robust: 35 Success: True
+2024-11-11 11:50:47,241 DEBUG: Matching DJI_20241111120054_0019_W.JPG and DJI_20241111120058_0021_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.522 T-robust: 0.006 T-total: 0.531 Matches: 1040 Robust: 856 Success: True
+2024-11-11 11:50:47,303 DEBUG: Matching DJI_20241111120159_0046_W.JPG and DJI_20241111120155_0045_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.609 T-robust: 0.009 T-total: 0.622 Matches: 1470 Robust: 1310 Success: True
+2024-11-11 11:50:47,314 DEBUG: Matching DJI_20241111120058_0021_W.JPG and DJI_20241111120147_0042_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.586 T-robust: 0.003 T-total: 0.589 Matches: 458 Robust: 407 Success: True
+2024-11-11 11:50:47,365 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120201_0047_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.772 T-robust: 0.010 T-total: 0.789 Matches: 2532 Robust: 2454 Success: True
+2024-11-11 11:50:47,449 DEBUG: Matching DJI_20241111120046_0015_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.617 T-robust: 0.011 T-total: 0.634 Matches: 2623 Robust: 2309 Success: True
+2024-11-11 11:50:47,457 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120022_0005_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.589 T-robust: 0.006 T-total: 0.595 Matches: 73 Robust: 49 Success: True
+2024-11-11 11:50:47,502 DEBUG: Matching DJI_20241111120035_0011_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.778 Matches: FAILED
+2024-11-11 11:50:47,689 DEBUG: Matching DJI_20241111120141_0039_W.JPG and DJI_20241111120120_0030_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.445 T-robust: 0.002 T-total: 0.448 Matches: 294 Robust: 236 Success: True
+2024-11-11 11:50:47,772 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120108_0024_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.462 T-robust: 0.005 T-total: 0.468 Matches: 854 Robust: 709 Success: True
+2024-11-11 11:50:47,784 DEBUG: Matching DJI_20241111120159_0046_W.JPG and DJI_20241111120130_0034_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.469 Matches: FAILED
+2024-11-11 11:50:47,840 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120022_0005_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.469 T-robust: 0.003 T-total: 0.474 Matches: 574 Robust: 485 Success: True
+2024-11-11 11:50:47,909 DEBUG: Matching DJI_20241111120038_0012_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.456 T-robust: 0.003 T-total: 0.459 Matches: 482 Robust: 416 Success: True
+2024-11-11 11:50:47,914 DEBUG: Matching DJI_20241111120145_0041_W.JPG and DJI_20241111120149_0043_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.401 T-robust: 0.008 T-total: 0.411 Matches: 924 Robust: 781 Success: True
+2024-11-11 11:50:47,961 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120124_0032_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.501 T-robust: 0.002 T-total: 0.504 Matches: 305 Robust: 255 Success: True
+2024-11-11 11:50:48,165 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120147_0042_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.473 T-robust: 0.002 T-total: 0.475 Matches: 339 Robust: 316 Success: True
+2024-11-11 11:50:48,231 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120046_0015_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.443 T-robust: 0.002 T-total: 0.446 Matches: 184 Robust: 142 Success: True
+2024-11-11 11:50:48,285 DEBUG: Matching DJI_20241111120151_0044_W.JPG and DJI_20241111120149_0043_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.431 T-robust: 0.008 T-total: 0.444 Matches: 2382 Robust: 2285 Success: True
+2024-11-11 11:50:48,288 DEBUG: Matching DJI_20241111120118_0029_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.514 T-robust: 0.001 T-total: 0.516 Matches: 383 Robust: 340 Success: True
+2024-11-11 11:50:48,330 DEBUG: Matching DJI_20241111120130_0034_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.411 T-robust: 0.003 T-total: 0.415 Matches: 595 Robust: 542 Success: True
+2024-11-11 11:50:48,368 DEBUG: Matching DJI_20241111120147_0042_W.JPG and DJI_20241111120155_0045_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.450 T-robust: 0.003 T-total: 0.454 Matches: 575 Robust: 488 Success: True
+2024-11-11 11:50:48,378 DEBUG: Matching DJI_20241111120052_0018_W.JPG and DJI_20241111120056_0020_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.410 T-robust: 0.004 T-total: 0.416 Matches: 1031 Robust: 917 Success: True
+2024-11-11 11:50:48,625 DEBUG: Matching DJI_20241111120118_0029_W.JPG and DJI_20241111120137_0037_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.455 T-robust: 0.004 T-total: 0.460 Matches: 632 Robust: 579 Success: True
+2024-11-11 11:50:48,694 DEBUG: Matching DJI_20241111120120_0030_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.450 T-robust: 0.009 T-total: 0.463 Matches: 2125 Robust: 1865 Success: True
+2024-11-11 11:50:48,704 DEBUG: Matching DJI_20241111120054_0019_W.JPG and DJI_20241111120116_0028_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.416 T-robust: 0.002 T-total: 0.419 Matches: 170 Robust: 146 Success: True
+2024-11-11 11:50:48,707 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120054_0019_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.415 T-robust: 0.003 T-total: 0.419 Matches: 514 Robust: 469 Success: True
+2024-11-11 11:50:48,755 DEBUG: Matching DJI_20241111120045_0014_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.423 T-robust: 0.002 T-total: 0.425 Matches: 649 Robust: 543 Success: True
+2024-11-11 11:50:48,796 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120024_0006_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.396 T-robust: 0.030 T-total: 0.426 Matches: 20 Robust: 10 Success: False
+2024-11-11 11:50:48,814 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120024_0006_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.429 T-robust: 0.004 T-total: 0.435 Matches: 948 Robust: 870 Success: True
+2024-11-11 11:50:49,048 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120058_0021_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.413 T-robust: 0.007 T-total: 0.422 Matches: 946 Robust: 809 Success: True
+2024-11-11 11:50:49,184 DEBUG: Matching DJI_20241111120133_0035_W.JPG and DJI_20241111120120_0030_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.472 T-robust: 0.005 T-total: 0.479 Matches: 524 Robust: 452 Success: True
+2024-11-11 11:50:49,257 DEBUG: Matching DJI_20241111120130_0034_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.545 T-robust: 0.004 T-total: 0.549 Matches: 268 Robust: 242 Success: True
+2024-11-11 11:50:49,322 DEBUG: Matching DJI_20241111120133_0035_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.613 T-robust: 0.010 T-total: 0.627 Matches: 1205 Robust: 1051 Success: True
+2024-11-11 11:50:49,388 DEBUG: Matching DJI_20241111120145_0041_W.JPG and DJI_20241111120110_0025_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.566 T-robust: 0.005 T-total: 0.574 Matches: 776 Robust: 687 Success: True
+2024-11-11 11:50:49,442 DEBUG: Matching DJI_20241111120035_0011_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.650 T-robust: 0.022 T-total: 0.686 Matches: 2213 Robust: 2120 Success: True
+2024-11-11 11:50:49,454 DEBUG: Matching DJI_20241111120124_0032_W.JPG and DJI_20241111120035_0011_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.653 T-robust: 0.003 T-total: 0.658 Matches: 361 Robust: 337 Success: True
+2024-11-11 11:50:49,833 DEBUG: Matching DJI_20241111120120_0030_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.637 T-robust: 0.005 T-total: 0.645 Matches: 790 Robust: 725 Success: True
+2024-11-11 11:50:49,853 DEBUG: Matching DJI_20241111120022_0005_W.JPG and DJI_20241111120035_0011_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.801 Matches: FAILED
+2024-11-11 11:50:49,982 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120116_0028_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.713 T-robust: 0.006 T-total: 0.724 Matches: 706 Robust: 629 Success: True
+2024-11-11 11:50:50,015 DEBUG: Matching DJI_20241111120118_0029_W.JPG and DJI_20241111120022_0005_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.688 T-robust: 0.004 T-total: 0.693 Matches: 124 Robust: 96 Success: True
+2024-11-11 11:50:50,024 DEBUG: Matching DJI_20241111120141_0039_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.630 T-robust: 0.004 T-total: 0.635 Matches: 334 Robust: 264 Success: True
+2024-11-11 11:50:50,135 DEBUG: Matching DJI_20241111120100_0022_W.JPG and DJI_20241111120058_0021_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.666 T-robust: 0.017 T-total: 0.693 Matches: 3381 Robust: 3114 Success: True
+2024-11-11 11:50:50,244 DEBUG: Matching DJI_20241111120104_0023_W.JPG and DJI_20241111120149_0043_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.784 T-robust: 0.003 T-total: 0.790 Matches: 786 Robust: 749 Success: True
+2024-11-11 11:50:50,446 DEBUG: Matching DJI_20241111120052_0018_W.JPG and DJI_20241111120018_0003_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.602 T-robust: 0.009 T-total: 0.612 Matches: 711 Robust: 616 Success: True
+2024-11-11 11:50:50,459 DEBUG: Matching DJI_20241111120016_0002_W.JPG and DJI_20241111120056_0020_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.587 T-robust: 0.015 T-total: 0.605 Matches: 1128 Robust: 1002 Success: True
+2024-11-11 11:50:50,626 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120043_0013_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.632 T-robust: 0.008 T-total: 0.643 Matches: 1279 Robust: 1108 Success: True
+2024-11-11 11:50:50,643 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120118_0029_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.619 T-robust: 0.004 T-total: 0.626 Matches: 708 Robust: 634 Success: True
+2024-11-11 11:50:50,686 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.652 T-robust: 0.006 T-total: 0.659 Matches: 798 Robust: 670 Success: True
+2024-11-11 11:50:50,781 DEBUG: Matching DJI_20241111120133_0035_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.622 T-robust: 0.015 T-total: 0.645 Matches: 2415 Robust: 2325 Success: True
+2024-11-11 11:50:50,871 DEBUG: Matching DJI_20241111120118_0029_W.JPG and DJI_20241111120116_0028_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.605 T-robust: 0.013 T-total: 0.625 Matches: 1993 Robust: 1792 Success: True
+2024-11-11 11:50:51,165 DEBUG: Matching DJI_20241111120149_0043_W.JPG and DJI_20241111120201_0047_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.710 T-robust: 0.004 T-total: 0.715 Matches: 328 Robust: 281 Success: True
+2024-11-11 11:50:51,216 DEBUG: Matching DJI_20241111120022_0005_W.JPG and DJI_20241111120024_0006_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.723 T-robust: 0.020 T-total: 0.755 Matches: 2086 Robust: 1969 Success: True
+2024-11-11 11:50:51,309 DEBUG: Matching DJI_20241111120151_0044_W.JPG and DJI_20241111120110_0025_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.663 T-robust: 0.003 T-total: 0.666 Matches: 247 Robust: 203 Success: True
+2024-11-11 11:50:51,336 DEBUG: Matching DJI_20241111120125_0033_W.JPG and DJI_20241111120035_0011_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.700 T-robust: 0.003 T-total: 0.704 Matches: 426 Robust: 386 Success: True
+2024-11-11 11:50:51,387 DEBUG: Matching DJI_20241111120201_0047_W.JPG and DJI_20241111120155_0045_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.696 T-robust: 0.004 T-total: 0.701 Matches: 420 Robust: 371 Success: True
+2024-11-11 11:50:51,438 DEBUG: Matching DJI_20241111120100_0022_W.JPG and DJI_20241111120155_0045_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.654 T-robust: 0.001 T-total: 0.656 Matches: 84 Robust: 70 Success: True
+2024-11-11 11:50:51,623 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.720 T-robust: 0.031 T-total: 0.752 Matches: 31 Robust: 15 Success: False
+2024-11-11 11:50:51,668 DEBUG: Matching DJI_20241111120201_0047_W.JPG and DJI_20241111120130_0034_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.478 T-robust: 0.024 T-total: 0.502 Matches: 20 Robust: 9 Success: False
+2024-11-11 11:50:51,705 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120151_0044_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.486 T-robust: 0.001 T-total: 0.488 Matches: 147 Robust: 123 Success: True
+2024-11-11 11:50:51,793 DEBUG: Matching DJI_20241111120120_0030_W.JPG and DJI_20241111120024_0006_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.478 T-robust: 0.004 T-total: 0.482 Matches: 107 Robust: 75 Success: True
+2024-11-11 11:50:51,842 DEBUG: Matching DJI_20241111120018_0003_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.486 T-robust: 0.012 T-total: 0.505 Matches: 2747 Robust: 2543 Success: True
+2024-11-11 11:50:51,870 DEBUG: Matching DJI_20241111120141_0039_W.JPG and DJI_20241111120118_0029_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.478 T-robust: 0.003 T-total: 0.482 Matches: 527 Robust: 437 Success: True
+2024-11-11 11:50:51,933 DEBUG: Matching DJI_20241111120149_0043_W.JPG and DJI_20241111120147_0042_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.479 T-robust: 0.010 T-total: 0.494 Matches: 2659 Robust: 2558 Success: True
+2024-11-11 11:50:52,075 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120145_0041_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.448 T-robust: 0.002 T-total: 0.452 Matches: 550 Robust: 520 Success: True
+2024-11-11 11:50:52,140 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120137_0037_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.457 T-robust: 0.009 T-total: 0.472 Matches: 2561 Robust: 2413 Success: True
+2024-11-11 11:50:52,185 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120028_0008_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.468 T-robust: 0.007 T-total: 0.480 Matches: 1832 Robust: 1703 Success: True
+2024-11-11 11:50:52,258 DEBUG: Matching DJI_20241111120118_0029_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.461 T-robust: 0.003 T-total: 0.465 Matches: 471 Robust: 417 Success: True
+2024-11-11 11:50:52,292 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120016_0002_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.436 T-robust: 0.009 T-total: 0.449 Matches: 2296 Robust: 2123 Success: True
+2024-11-11 11:50:52,351 DEBUG: Matching DJI_20241111120054_0019_W.JPG and DJI_20241111120016_0002_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.476 T-robust: 0.004 T-total: 0.481 Matches: 734 Robust: 665 Success: True
+2024-11-11 11:50:52,415 DEBUG: Matching DJI_20241111120100_0022_W.JPG and DJI_20241111120151_0044_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.479 T-robust: 0.002 T-total: 0.482 Matches: 404 Robust: 366 Success: True
+2024-11-11 11:50:52,537 DEBUG: Matching DJI_20241111120104_0023_W.JPG and DJI_20241111120110_0025_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.455 T-robust: 0.004 T-total: 0.461 Matches: 902 Robust: 811 Success: True
+2024-11-11 11:50:52,655 DEBUG: Matching DJI_20241111120018_0003_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.469 Matches: FAILED
+2024-11-11 11:50:52,706 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.560 T-robust: 0.003 T-total: 0.565 Matches: 795 Robust: 713 Success: True
+2024-11-11 11:50:52,717 DEBUG: Matching DJI_20241111120141_0039_W.JPG and DJI_20241111120116_0028_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.450 T-robust: 0.003 T-total: 0.455 Matches: 810 Robust: 728 Success: True
+2024-11-11 11:50:52,766 DEBUG: Matching DJI_20241111120018_0003_W.JPG and DJI_20241111120028_0008_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.445 T-robust: 0.028 T-total: 0.473 Matches: 36 Robust: 19 Success: False
+2024-11-11 11:50:52,841 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120054_0019_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.483 T-robust: 0.004 T-total: 0.488 Matches: 878 Robust: 751 Success: True
+2024-11-11 11:50:52,899 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120149_0043_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.480 T-robust: 0.002 T-total: 0.483 Matches: 412 Robust: 360 Success: True
+2024-11-11 11:50:53,058 DEBUG: Matching DJI_20241111120120_0030_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.515 T-robust: 0.003 T-total: 0.520 Matches: 698 Robust: 619 Success: True
+2024-11-11 11:50:53,073 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120052_0018_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.412 T-robust: 0.004 T-total: 0.418 Matches: 957 Robust: 865 Success: True
+2024-11-11 11:50:53,155 DEBUG: Matching DJI_20241111120110_0025_W.JPG and DJI_20241111120056_0020_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.421 T-robust: 0.012 T-total: 0.437 Matches: 1334 Robust: 1103 Success: True
+2024-11-11 11:50:53,187 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120118_0029_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.474 T-robust: 0.005 T-total: 0.480 Matches: 427 Robust: 403 Success: True
+2024-11-11 11:50:53,272 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120125_0033_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.493 T-robust: 0.011 T-total: 0.504 Matches: 96 Robust: 61 Success: True
+2024-11-11 11:50:53,404 DEBUG: Matching DJI_20241111120120_0030_W.JPG and DJI_20241111120116_0028_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.553 T-robust: 0.008 T-total: 0.563 Matches: 700 Robust: 578 Success: True
+2024-11-11 11:50:53,436 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120137_0037_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.534 T-robust: 0.002 T-total: 0.536 Matches: 169 Robust: 143 Success: True
+2024-11-11 11:50:53,662 DEBUG: Matching DJI_20241111120133_0035_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.585 T-robust: 0.003 T-total: 0.588 Matches: 294 Robust: 251 Success: True
+2024-11-11 11:50:53,666 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120046_0015_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.602 T-robust: 0.004 T-total: 0.608 Matches: 285 Robust: 247 Success: True
+2024-11-11 11:50:53,803 DEBUG: Matching DJI_20241111120151_0044_W.JPG and DJI_20241111120155_0045_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.634 T-robust: 0.009 T-total: 0.647 Matches: 1406 Robust: 1324 Success: True
+2024-11-11 11:50:53,986 DEBUG: Matching DJI_20241111120024_0006_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.780 T-robust: 0.012 T-total: 0.798 Matches: 2219 Robust: 2060 Success: True
+2024-11-11 11:50:54,000 DEBUG: Matching DJI_20241111120124_0032_W.JPG and DJI_20241111120046_0015_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.721 T-robust: 0.006 T-total: 0.728 Matches: 184 Robust: 146 Success: True
+2024-11-11 11:50:54,139 DEBUG: Matching DJI_20241111120110_0025_W.JPG and DJI_20241111120201_0047_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.730 T-robust: 0.003 T-total: 0.734 Matches: 254 Robust: 209 Success: True
+2024-11-11 11:50:54,167 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120050_0017_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.721 T-robust: 0.007 T-total: 0.730 Matches: 760 Robust: 612 Success: True
+2024-11-11 11:50:54,409 DEBUG: Matching DJI_20241111120125_0033_W.JPG and DJI_20241111120130_0034_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.720 T-robust: 0.016 T-total: 0.746 Matches: 2925 Robust: 2829 Success: True
+2024-11-11 11:50:54,505 DEBUG: Matching DJI_20241111120038_0012_W.JPG and DJI_20241111120035_0011_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.684 T-robust: 0.012 T-total: 0.702 Matches: 2067 Robust: 1832 Success: True
+2024-11-11 11:50:54,572 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120147_0042_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.903 T-robust: 0.002 T-total: 0.905 Matches: 334 Robust: 300 Success: True
+2024-11-11 11:50:54,672 DEBUG: Matching DJI_20241111120104_0023_W.JPG and DJI_20241111120056_0020_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.674 T-robust: 0.006 T-total: 0.683 Matches: 985 Robust: 901 Success: True
+2024-11-11 11:50:54,842 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.833 T-robust: 0.004 T-total: 0.838 Matches: 413 Robust: 342 Success: True
+2024-11-11 11:50:54,864 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120110_0025_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.668 T-robust: 0.022 T-total: 0.697 Matches: 2460 Robust: 2223 Success: True
+2024-11-11 11:50:54,909 DEBUG: Matching DJI_20241111120133_0035_W.JPG and DJI_20241111120130_0034_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.753 T-robust: 0.010 T-total: 0.768 Matches: 1549 Robust: 1444 Success: True
+2024-11-11 11:50:55,006 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120125_0033_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.597 Matches: FAILED
+2024-11-11 11:50:55,221 DEBUG: Matching DJI_20241111120125_0033_W.JPG and DJI_20241111120124_0032_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.691 T-robust: 0.016 T-total: 0.714 Matches: 2557 Robust: 2428 Success: True
+2024-11-11 11:50:55,232 DEBUG: Matching DJI_20241111120045_0014_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.651 T-robust: 0.005 T-total: 0.659 Matches: 370 Robust: 309 Success: True
+2024-11-11 11:50:55,295 DEBUG: Matching DJI_20241111120136_0036_W.JPG and DJI_20241111120035_0011_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.617 T-robust: 0.005 T-total: 0.623 Matches: 68 Robust: 47 Success: True
+2024-11-11 11:50:55,438 DEBUG: Matching DJI_20241111120022_0005_W.JPG and DJI_20241111120016_0002_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.591 T-robust: 0.004 T-total: 0.595 Matches: 267 Robust: 199 Success: True
+2024-11-11 11:50:55,454 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120133_0035_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.584 T-robust: 0.003 T-total: 0.588 Matches: 361 Robust: 283 Success: True
+2024-11-11 11:50:55,516 DEBUG: Matching DJI_20241111120125_0033_W.JPG and DJI_20241111120046_0015_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.602 T-robust: 0.004 T-total: 0.606 Matches: 92 Robust: 65 Success: True
+2024-11-11 11:50:55,566 DEBUG: Matching DJI_20241111120141_0039_W.JPG and DJI_20241111120050_0017_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.556 T-robust: 0.002 T-total: 0.559 Matches: 253 Robust: 203 Success: True
+2024-11-11 11:50:55,783 DEBUG: Matching DJI_20241111120043_0013_W.JPG and DJI_20241111120120_0030_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.557 T-robust: 0.003 T-total: 0.561 Matches: 424 Robust: 338 Success: True
+2024-11-11 11:50:55,791 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120141_0039_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.490 T-robust: 0.002 T-total: 0.493 Matches: 334 Robust: 286 Success: True
+2024-11-11 11:50:55,868 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.632 T-robust: 0.002 T-total: 0.634 Matches: 181 Robust: 145 Success: True
+2024-11-11 11:50:55,955 DEBUG: Matching DJI_20241111120118_0029_W.JPG and DJI_20241111120120_0030_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.488 T-robust: 0.009 T-total: 0.501 Matches: 2059 Robust: 1787 Success: True
+2024-11-11 11:50:55,956 DEBUG: Matching DJI_20241111120104_0023_W.JPG and DJI_20241111120155_0045_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.428 T-robust: 0.012 T-total: 0.440 Matches: 208 Robust: 158 Success: True
+2024-11-11 11:50:55,966 DEBUG: Matching DJI_20241111120052_0018_W.JPG and DJI_20241111120024_0006_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.524 T-robust: 0.002 T-total: 0.527 Matches: 393 Robust: 348 Success: True
+2024-11-11 11:50:56,026 DEBUG: Matching DJI_20241111120052_0018_W.JPG and DJI_20241111120022_0005_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.454 T-robust: 0.003 T-total: 0.459 Matches: 695 Robust: 580 Success: True
+2024-11-11 11:50:56,240 DEBUG: Matching DJI_20241111120159_0046_W.JPG and DJI_20241111120145_0041_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.449 T-robust: 0.005 T-total: 0.456 Matches: 521 Robust: 471 Success: True
+2024-11-11 11:50:56,277 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120022_0005_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.483 T-robust: 0.002 T-total: 0.485 Matches: 117 Robust: 97 Success: True
+2024-11-11 11:50:56,380 DEBUG: Matching DJI_20241111120018_0003_W.JPG and DJI_20241111120029_0009_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.513 Matches: FAILED
+2024-11-11 11:50:56,485 DEBUG: Matching DJI_20241111120052_0018_W.JPG and DJI_20241111120118_0029_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.526 T-robust: 0.003 T-total: 0.529 Matches: 180 Robust: 147 Success: True
+2024-11-11 11:50:56,512 DEBUG: Matching DJI_20241111120104_0023_W.JPG and DJI_20241111120151_0044_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.539 T-robust: 0.004 T-total: 0.546 Matches: 768 Robust: 729 Success: True
+2024-11-11 11:50:56,555 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120054_0019_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.592 T-robust: 0.004 T-total: 0.596 Matches: 351 Robust: 299 Success: True
+2024-11-11 11:50:56,575 DEBUG: Matching DJI_20241111120016_0002_W.JPG and DJI_20241111120104_0023_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.541 T-robust: 0.003 T-total: 0.545 Matches: 409 Robust: 360 Success: True
+2024-11-11 11:50:56,877 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120104_0023_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.594 T-robust: 0.003 T-total: 0.599 Matches: 418 Robust: 386 Success: True
+2024-11-11 11:50:56,925 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120133_0035_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.678 T-robust: 0.007 T-total: 0.685 Matches: 62 Robust: 42 Success: True
+2024-11-11 11:50:57,062 DEBUG: Matching DJI_20241111120046_0015_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.670 T-robust: 0.008 T-total: 0.680 Matches: 994 Robust: 890 Success: True
+2024-11-11 11:50:57,163 DEBUG: Matching DJI_20241111120018_0003_W.JPG and DJI_20241111120056_0020_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.659 T-robust: 0.012 T-total: 0.677 Matches: 872 Robust: 807 Success: True
+2024-11-11 11:50:57,204 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120058_0021_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.616 T-robust: 0.005 T-total: 0.628 Matches: 464 Robust: 441 Success: True
+2024-11-11 11:50:57,279 DEBUG: Matching DJI_20241111120159_0046_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.761 T-robust: 0.003 T-total: 0.765 Matches: 246 Robust: 200 Success: True
+2024-11-11 11:50:57,536 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120046_0015_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.972 T-robust: 0.006 T-total: 0.980 Matches: 683 Robust: 574 Success: True
+2024-11-11 11:50:57,584 DEBUG: Matching DJI_20241111120028_0008_W.JPG and DJI_20241111120035_0011_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.702 T-robust: 0.003 T-total: 0.706 Matches: 168 Robust: 136 Success: True
+2024-11-11 11:50:57,622 DEBUG: Matching DJI_20241111120043_0013_W.JPG and DJI_20241111120035_0011_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.690 T-robust: 0.004 T-total: 0.695 Matches: 715 Robust: 638 Success: True
+2024-11-11 11:50:57,904 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120125_0033_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.832 T-robust: 0.002 T-total: 0.834 Matches: 207 Robust: 174 Success: True
+2024-11-11 11:50:57,986 DEBUG: Matching DJI_20241111120052_0018_W.JPG and DJI_20241111120116_0028_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.806 T-robust: 0.003 T-total: 0.811 Matches: 365 Robust: 337 Success: True
+2024-11-11 11:50:58,006 DEBUG: Matching DJI_20241111120100_0022_W.JPG and DJI_20241111120104_0023_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.703 T-robust: 0.017 T-total: 0.727 Matches: 2392 Robust: 2196 Success: True
+2024-11-11 11:50:58,018 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120116_0028_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.806 T-robust: 0.005 T-total: 0.813 Matches: 643 Robust: 570 Success: True
+2024-11-11 11:50:58,189 DEBUG: Matching DJI_20241111120052_0018_W.JPG and DJI_20241111120145_0041_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.649 T-robust: 0.002 T-total: 0.653 Matches: 276 Robust: 238 Success: True
+2024-11-11 11:50:58,246 DEBUG: Matching DJI_20241111120028_0008_W.JPG and DJI_20241111120024_0006_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.655 T-robust: 0.004 T-total: 0.661 Matches: 671 Robust: 554 Success: True
+2024-11-11 11:50:58,264 DEBUG: Matching DJI_20241111120016_0002_W.JPG and DJI_20241111120024_0006_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.632 T-robust: 0.009 T-total: 0.641 Matches: 49 Robust: 31 Success: True
+2024-11-11 11:50:58,553 DEBUG: Matching DJI_20241111120116_0028_W.JPG and DJI_20241111120145_0041_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.645 T-robust: 0.002 T-total: 0.648 Matches: 274 Robust: 250 Success: True
+2024-11-11 11:50:58,573 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120056_0020_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.550 T-robust: 0.003 T-total: 0.555 Matches: 772 Robust: 704 Success: True
+2024-11-11 11:50:58,593 DEBUG: Matching DJI_20241111120016_0002_W.JPG and DJI_20241111120058_0021_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.593 T-robust: 0.004 T-total: 0.599 Matches: 929 Robust: 841 Success: True
+2024-11-11 11:50:58,603 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120201_0047_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.583 T-robust: 0.004 T-total: 0.588 Matches: 92 Robust: 66 Success: True
+2024-11-11 11:50:58,729 DEBUG: Matching DJI_20241111120136_0036_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.536 T-robust: 0.003 T-total: 0.539 Matches: 195 Robust: 147 Success: True
+2024-11-11 11:50:58,764 DEBUG: Matching DJI_20241111120054_0019_W.JPG and DJI_20241111120145_0041_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.514 T-robust: 0.003 T-total: 0.518 Matches: 420 Robust: 334 Success: True
+2024-11-11 11:50:58,888 DEBUG: Matching DJI_20241111120116_0028_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.620 T-robust: 0.002 T-total: 0.622 Matches: 483 Robust: 420 Success: True
+2024-11-11 11:50:59,006 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.432 Matches: FAILED
+2024-11-11 11:50:59,065 DEBUG: Matching DJI_20241111120159_0046_W.JPG and DJI_20241111120201_0047_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.461 T-robust: 0.007 T-total: 0.471 Matches: 1879 Robust: 1719 Success: True
+2024-11-11 11:50:59,069 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.463 T-robust: 0.002 T-total: 0.465 Matches: 305 Robust: 259 Success: True
+2024-11-11 11:50:59,087 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120120_0030_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.530 T-robust: 0.002 T-total: 0.533 Matches: 515 Robust: 478 Success: True
+2024-11-11 11:50:59,174 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120151_0044_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.441 T-robust: 0.002 T-total: 0.444 Matches: 121 Robust: 103 Success: True
+2024-11-11 11:50:59,225 DEBUG: Matching DJI_20241111120151_0044_W.JPG and DJI_20241111120159_0046_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.455 T-robust: 0.004 T-total: 0.460 Matches: 581 Robust: 529 Success: True
+2024-11-11 11:50:59,506 DEBUG: Matching DJI_20241111120016_0002_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.569 T-robust: 0.050 T-total: 0.618 Matches: 24 Robust: 11 Success: False
+2024-11-11 11:50:59,567 DEBUG: Matching DJI_20241111120024_0006_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.555 T-robust: 0.005 T-total: 0.561 Matches: 562 Robust: 463 Success: True
+2024-11-11 11:50:59,679 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120112_0026_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.600 T-robust: 0.008 T-total: 0.609 Matches: 247 Robust: 197 Success: True
+2024-11-11 11:50:59,688 DEBUG: Matching DJI_20241111120159_0046_W.JPG and DJI_20241111120147_0042_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.588 T-robust: 0.010 T-total: 0.600 Matches: 887 Robust: 747 Success: True
+2024-11-11 11:50:59,699 DEBUG: Matching DJI_20241111120130_0034_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.626 T-robust: 0.005 T-total: 0.633 Matches: 620 Robust: 521 Success: True
+2024-11-11 11:50:59,803 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.621 T-robust: 0.005 T-total: 0.629 Matches: 780 Robust: 682 Success: True
+2024-11-11 11:50:59,864 DEBUG: Matching DJI_20241111120130_0034_W.JPG and DJI_20241111120035_0011_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.634 T-robust: 0.003 T-total: 0.638 Matches: 302 Robust: 271 Success: True
+2024-11-11 11:51:00,153 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120159_0046_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.634 T-robust: 0.007 T-total: 0.642 Matches: 81 Robust: 56 Success: True
+2024-11-11 11:51:00,336 DEBUG: Matching DJI_20241111120118_0029_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.764 T-robust: 0.004 T-total: 0.768 Matches: 148 Robust: 120 Success: True
+2024-11-11 11:51:00,476 DEBUG: Matching DJI_20241111120028_0008_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.775 T-robust: 0.008 T-total: 0.787 Matches: 1245 Robust: 1146 Success: True
+2024-11-11 11:51:00,508 DEBUG: Matching DJI_20241111120108_0024_W.JPG and DJI_20241111120147_0042_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.824 T-robust: 0.003 T-total: 0.829 Matches: 809 Robust: 737 Success: True
+2024-11-11 11:51:00,559 DEBUG: Matching DJI_20241111120110_0025_W.JPG and DJI_20241111120058_0021_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.684 T-robust: 0.006 T-total: 0.692 Matches: 970 Robust: 864 Success: True
+2024-11-11 11:51:00,615 DEBUG: Matching DJI_20241111120052_0018_W.JPG and DJI_20241111120016_0002_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.911 T-robust: 0.004 T-total: 0.915 Matches: 392 Robust: 334 Success: True
+2024-11-11 11:51:00,646 DEBUG: Matching DJI_20241111120125_0033_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.837 T-robust: 0.003 T-total: 0.842 Matches: 427 Robust: 374 Success: True
+2024-11-11 11:51:00,864 DEBUG: Matching DJI_20241111120043_0013_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.705 T-robust: 0.004 T-total: 0.710 Matches: 260 Robust: 206 Success: True
+2024-11-11 11:51:01,014 DEBUG: Matching DJI_20241111120043_0013_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.657 T-robust: 0.013 T-total: 0.677 Matches: 2275 Robust: 2152 Success: True
+2024-11-11 11:51:01,109 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120159_0046_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.625 T-robust: 0.004 T-total: 0.632 Matches: 684 Robust: 574 Success: True
+2024-11-11 11:51:01,129 DEBUG: Matching DJI_20241111120043_0013_W.JPG and DJI_20241111120130_0034_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.616 T-robust: 0.003 T-total: 0.620 Matches: 349 Robust: 304 Success: True
+2024-11-11 11:51:01,272 DEBUG: Matching DJI_20241111120035_0011_W.JPG and DJI_20241111120024_0006_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.668 T-robust: 0.044 T-total: 0.712 Matches: 37 Robust: 14 Success: False
+2024-11-11 11:51:01,322 DEBUG: Matching DJI_20241111120024_0006_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.689 T-robust: 0.018 T-total: 0.706 Matches: 55 Robust: 32 Success: True
+2024-11-11 11:51:01,356 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.701 T-robust: 0.006 T-total: 0.709 Matches: 774 Robust: 693 Success: True
+2024-11-11 11:51:01,501 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120141_0039_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.617 T-robust: 0.012 T-total: 0.635 Matches: 2532 Robust: 2452 Success: True
+2024-11-11 11:51:01,544 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.527 T-robust: 0.001 T-total: 0.529 Matches: 86 Robust: 72 Success: True
+2024-11-11 11:51:01,677 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120100_0022_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.541 T-robust: 0.003 T-total: 0.547 Matches: 871 Robust: 833 Success: True
+2024-11-11 11:51:01,746 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120046_0015_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.621 T-robust: 0.008 T-total: 0.636 Matches: 2063 Robust: 1845 Success: True
+2024-11-11 11:51:01,879 DEBUG: Matching DJI_20241111120141_0039_W.JPG and DJI_20241111120145_0041_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.514 T-robust: 0.005 T-total: 0.522 Matches: 886 Robust: 732 Success: True
+2024-11-11 11:51:01,886 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120049_0016_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.608 T-robust: 0.004 T-total: 0.613 Matches: 526 Robust: 424 Success: True
+2024-11-11 11:51:01,891 DEBUG: Matching DJI_20241111120118_0029_W.JPG and DJI_20241111120046_0015_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.561 T-robust: 0.006 T-total: 0.568 Matches: 675 Robust: 581 Success: True
+2024-11-11 11:51:01,958 DEBUG: Matching DJI_20241111120159_0046_W.JPG and DJI_20241111120149_0043_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.451 T-robust: 0.004 T-total: 0.457 Matches: 882 Robust: 739 Success: True
+2024-11-11 11:51:01,996 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120120_0030_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.446 T-robust: 0.004 T-total: 0.451 Matches: 827 Robust: 730 Success: True
+2024-11-11 11:51:02,092 DEBUG: Matching DJI_20241111120035_0011_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.412 T-robust: 0.003 T-total: 0.415 Matches: 58 Robust: 42 Success: True
+2024-11-11 11:51:02,229 DEBUG: Matching DJI_20241111120141_0039_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.461 T-robust: 0.014 T-total: 0.479 Matches: 2413 Robust: 2237 Success: True
+2024-11-11 11:51:02,350 DEBUG: Matching DJI_20241111120022_0005_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.459 T-robust: 0.003 T-total: 0.463 Matches: 619 Robust: 532 Success: True
+2024-11-11 11:51:02,367 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.469 T-robust: 0.005 T-total: 0.475 Matches: 515 Robust: 433 Success: True
+2024-11-11 11:51:02,419 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120141_0039_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.536 T-robust: 0.003 T-total: 0.540 Matches: 503 Robust: 426 Success: True
+2024-11-11 11:51:02,440 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120203_0048_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.477 T-robust: 0.003 T-total: 0.481 Matches: 276 Robust: 211 Success: True
+2024-11-11 11:51:02,478 DEBUG: Matching DJI_20241111120124_0032_W.JPG and DJI_20241111120038_0012_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.477 T-robust: 0.003 T-total: 0.482 Matches: 632 Robust: 604 Success: True
+2024-11-11 11:51:02,580 DEBUG: Matching DJI_20241111120035_0011_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.483 T-robust: 0.005 T-total: 0.488 Matches: 324 Robust: 289 Success: True
+2024-11-11 11:51:02,671 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120035_0011_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.437 T-robust: 0.003 T-total: 0.442 Matches: 785 Robust: 733 Success: True
+2024-11-11 11:51:02,861 DEBUG: Matching DJI_20241111120104_0023_W.JPG and DJI_20241111120058_0021_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.443 T-robust: 0.065 T-total: 0.511 Matches: 1802 Robust: 1527 Success: True
+2024-11-11 11:51:02,867 DEBUG: Matching DJI_20241111120054_0019_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.489 T-robust: 0.009 T-total: 0.499 Matches: 798 Robust: 757 Success: True
+2024-11-11 11:51:02,879 DEBUG: Matching DJI_20241111120022_0005_W.JPG and DJI_20241111120046_0015_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.456 T-robust: 0.002 T-total: 0.459 Matches: 237 Robust: 190 Success: True
+2024-11-11 11:51:02,898 DEBUG: Matching DJI_20241111120151_0044_W.JPG and DJI_20241111120145_0041_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.415 T-robust: 0.003 T-total: 0.419 Matches: 315 Robust: 289 Success: True
+2024-11-11 11:51:02,952 DEBUG: Matching DJI_20241111120201_0047_W.JPG and DJI_20241111120147_0042_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.503 T-robust: 0.006 T-total: 0.511 Matches: 816 Robust: 714 Success: True
+2024-11-11 11:51:03,042 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.449 T-robust: 0.008 T-total: 0.460 Matches: 2093 Robust: 1852 Success: True
+2024-11-11 11:51:03,117 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120022_0005_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.437 T-robust: 0.007 T-total: 0.445 Matches: 60 Robust: 39 Success: True
+2024-11-11 11:51:03,403 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120116_0028_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.536 T-robust: 0.005 T-total: 0.542 Matches: 628 Robust: 539 Success: True
+2024-11-11 11:51:03,445 DEBUG: Matching DJI_20241111120038_0012_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.552 T-robust: 0.009 T-total: 0.566 Matches: 1444 Robust: 1333 Success: True
+2024-11-11 11:51:03,512 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120024_0006_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.608 T-robust: 0.004 T-total: 0.613 Matches: 186 Robust: 140 Success: True
+2024-11-11 11:51:03,514 DEBUG: Matching DJI_20241111120032_0010_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.647 Matches: FAILED
+2024-11-11 11:51:03,589 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120130_0034_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.629 T-robust: 0.007 T-total: 0.636 Matches: 151 Robust: 103 Success: True
+2024-11-11 11:51:03,687 DEBUG: Matching DJI_20241111120133_0035_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.641 T-robust: 0.002 T-total: 0.644 Matches: 96 Robust: 74 Success: True
+2024-11-11 11:51:03,789 DEBUG: Matching DJI_20241111120018_0003_W.JPG and DJI_20241111120022_0005_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.664 T-robust: 0.007 T-total: 0.672 Matches: 747 Robust: 619 Success: True
+2024-11-11 11:51:04,114 DEBUG: Matching DJI_20241111120139_0038_W.JPG and DJI_20241111120114_0027_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.706 T-robust: 0.003 T-total: 0.710 Matches: 316 Robust: 277 Success: True
+2024-11-11 11:51:04,155 DEBUG: Matching DJI_20241111120052_0018_W.JPG and DJI_20241111120054_0019_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.680 T-robust: 0.019 T-total: 0.708 Matches: 2484 Robust: 2419 Success: True
+2024-11-11 11:51:04,181 DEBUG: Matching DJI_20241111120125_0033_W.JPG and DJI_20241111120038_0012_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.656 T-robust: 0.007 T-total: 0.665 Matches: 849 Robust: 716 Success: True
+2024-11-11 11:51:04,212 DEBUG: Matching DJI_20241111120133_0035_W.JPG and DJI_20241111120124_0032_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.684 T-robust: 0.010 T-total: 0.699 Matches: 1706 Robust: 1479 Success: True
+2024-11-11 11:51:04,242 DEBUG: Matching DJI_20241111120018_0003_W.JPG and DJI_20241111120024_0006_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.648 T-robust: 0.004 T-total: 0.653 Matches: 197 Robust: 150 Success: True
+2024-11-11 11:51:04,380 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120054_0019_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.684 T-robust: 0.006 T-total: 0.693 Matches: 1058 Robust: 936 Success: True
+2024-11-11 11:51:04,464 DEBUG: Matching DJI_20241111120141_0039_W.JPG and DJI_20241111120201_0047_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.668 T-robust: 0.004 T-total: 0.673 Matches: 284 Robust: 221 Success: True
+2024-11-11 11:51:04,694 DEBUG: Matching DJI_20241111120149_0043_W.JPG and DJI_20241111120110_0025_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.571 T-robust: 0.003 T-total: 0.579 Matches: 719 Robust: 683 Success: True
+2024-11-11 11:51:04,706 DEBUG: Matching DJI_20241111120018_0003_W.JPG and DJI_20241111120058_0021_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.521 T-robust: 0.003 T-total: 0.525 Matches: 650 Robust: 626 Success: True
+2024-11-11 11:51:04,730 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120130_0034_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.487 T-robust: 0.030 T-total: 0.517 Matches: 31 Robust: 10 Success: False
+2024-11-11 11:51:04,763 DEBUG: Matching DJI_20241111120159_0046_W.JPG and DJI_20241111120137_0037_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.579 T-robust: 0.029 T-total: 0.608 Matches: 48 Robust: 25 Success: True
+2024-11-11 11:51:04,813 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.566 T-robust: 0.003 T-total: 0.570 Matches: 645 Robust: 539 Success: True
+2024-11-11 11:51:04,892 DEBUG: Matching DJI_20241111120203_0048_W.JPG and DJI_20241111120155_0045_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.508 T-robust: 0.002 T-total: 0.511 Matches: 184 Robust: 144 Success: True
+2024-11-11 11:51:04,930 DEBUG: Matching DJI_20241111120054_0019_W.JPG and DJI_20241111120110_0025_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.456 T-robust: 0.007 T-total: 0.465 Matches: 1095 Robust: 871 Success: True
+2024-11-11 11:51:05,122 DEBUG: Matching DJI_20241111120054_0019_W.JPG and DJI_20241111120013_0001_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.424 T-robust: 0.002 T-total: 0.427 Matches: 371 Robust: 316 Success: True
+2024-11-11 11:51:05,153 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120045_0014_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.441 T-robust: 0.004 T-total: 0.446 Matches: 821 Robust: 732 Success: True
+2024-11-11 11:51:05,179 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120049_0016_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.436 T-robust: 0.009 T-total: 0.448 Matches: 2216 Robust: 1909 Success: True
+2024-11-11 11:51:05,229 DEBUG: Matching DJI_20241111120125_0033_W.JPG and DJI_20241111120201_0047_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.465 Matches: FAILED
+2024-11-11 11:51:05,256 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.442 Matches: FAILED
+2024-11-11 11:51:05,293 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120112_0026_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.392 T-robust: 0.005 T-total: 0.400 Matches: 2092 Robust: 1886 Success: True
+2024-11-11 11:51:05,335 DEBUG: Matching DJI_20241111120159_0046_W.JPG and DJI_20241111120125_0033_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.404 Matches: FAILED
+2024-11-11 11:51:05,581 DEBUG: Matching DJI_20241111120133_0035_W.JPG and DJI_20241111120201_0047_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.434 T-robust: 0.024 T-total: 0.458 Matches: 57 Robust: 30 Success: True
+2024-11-11 11:51:05,589 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.433 T-robust: 0.002 T-total: 0.436 Matches: 331 Robust: 281 Success: True
+2024-11-11 11:51:05,650 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120155_0045_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.439 T-robust: 0.031 T-total: 0.470 Matches: 38 Robust: 19 Success: False
+2024-11-11 11:51:05,660 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120116_0028_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.427 T-robust: 0.003 T-total: 0.430 Matches: 337 Robust: 269 Success: True
+2024-11-11 11:51:05,694 DEBUG: Matching DJI_20241111120108_0024_W.JPG and DJI_20241111120056_0020_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.352 T-robust: 0.004 T-total: 0.358 Matches: 1218 Robust: 1063 Success: True
+2024-11-11 11:51:05,708 DEBUG: Matching DJI_20241111120133_0035_W.JPG and DJI_20241111120043_0013_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.449 T-robust: 0.002 T-total: 0.452 Matches: 322 Robust: 276 Success: True
+2024-11-11 11:51:05,757 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120052_0018_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.456 T-robust: 0.006 T-total: 0.464 Matches: 837 Robust: 697 Success: True
+2024-11-11 11:51:06,053 DEBUG: Matching DJI_20241111120143_0040_W.JPG and DJI_20241111120201_0047_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.466 T-robust: 0.004 T-total: 0.471 Matches: 527 Robust: 429 Success: True
+2024-11-11 11:51:06,149 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120145_0041_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.554 T-robust: 0.004 T-total: 0.559 Matches: 965 Robust: 838 Success: True
+2024-11-11 11:51:06,209 DEBUG: Matching DJI_20241111120124_0032_W.JPG and DJI_20241111120120_0030_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.543 T-robust: 0.004 T-total: 0.548 Matches: 684 Robust: 603 Success: True
+2024-11-11 11:51:06,233 DEBUG: Matching DJI_20241111120022_0005_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.571 T-robust: 0.008 T-total: 0.583 Matches: 2102 Robust: 2002 Success: True
+2024-11-11 11:51:06,273 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120018_0003_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.562 T-robust: 0.002 T-total: 0.564 Matches: 285 Robust: 244 Success: True
+2024-11-11 11:51:06,284 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120110_0025_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.584 T-robust: 0.004 T-total: 0.590 Matches: 862 Robust: 712 Success: True
+2024-11-11 11:51:06,293 DEBUG: Matching DJI_20241111120143_0040_W.JPG and DJI_20241111120147_0042_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.529 T-robust: 0.004 T-total: 0.535 Matches: 864 Robust: 684 Success: True
+2024-11-11 11:51:06,514 DEBUG: Matching DJI_20241111120125_0033_W.JPG and DJI_20241111120043_0013_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.457 T-robust: 0.003 T-total: 0.461 Matches: 513 Robust: 428 Success: True
+2024-11-11 11:51:06,531 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120137_0037_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.379 T-robust: 0.002 T-total: 0.381 Matches: 169 Robust: 136 Success: True
+2024-11-11 11:51:06,657 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.419 T-robust: 0.003 T-total: 0.424 Matches: 703 Robust: 616 Success: True
+2024-11-11 11:51:06,667 DEBUG: Matching DJI_20241111120137_0037_W.JPG and DJI_20241111120133_0035_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.451 T-robust: 0.004 T-total: 0.457 Matches: 837 Robust: 716 Success: True
+2024-11-11 11:51:06,707 DEBUG: Matching DJI_20241111120029_0009_W.JPG and DJI_20241111120016_0002_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.432 Matches: FAILED
+2024-11-11 11:51:06,726 DEBUG: Matching DJI_20241111120141_0039_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.425 T-robust: 0.007 T-total: 0.433 Matches: 186 Robust: 146 Success: True
+2024-11-11 11:51:06,733 DEBUG: Matching DJI_20241111120124_0032_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.433 T-robust: 0.009 T-total: 0.449 Matches: 1994 Robust: 1936 Success: True
+2024-11-11 11:51:06,990 DEBUG: Matching DJI_20241111120124_0032_W.JPG and DJI_20241111120028_0008_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.473 T-robust: 0.002 T-total: 0.475 Matches: 156 Robust: 130 Success: True
+2024-11-11 11:51:07,018 DEBUG: Matching DJI_20241111120022_0005_W.JPG and DJI_20241111120032_0010_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.486 Matches: FAILED
+2024-11-11 11:51:07,115 DEBUG: Matching DJI_20241111120018_0003_W.JPG and DJI_20241111120016_0002_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.437 T-robust: 0.007 T-total: 0.447 Matches: 2697 Robust: 2661 Success: True
+2024-11-11 11:51:07,122 DEBUG: Matching DJI_20241111120052_0018_W.JPG and DJI_20241111120049_0016_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.460 T-robust: 0.003 T-total: 0.464 Matches: 827 Robust: 720 Success: True
+2024-11-11 11:51:07,126 DEBUG: Matching DJI_20241111120159_0046_W.JPG and DJI_20241111120133_0035_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.397 T-robust: 0.021 T-total: 0.418 Matches: 25 Robust: 11 Success: False
+2024-11-11 11:51:07,172 DEBUG: Matching DJI_20241111120028_0008_W.JPG and DJI_20241111120026_0007_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.433 T-robust: 0.008 T-total: 0.445 Matches: 2304 Robust: 2152 Success: True
+2024-11-11 11:51:07,198 DEBUG: Matching DJI_20241111120114_0027_W.JPG and DJI_20241111120141_0039_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.444 T-robust: 0.010 T-total: 0.465 Matches: 637 Robust: 513 Success: True
+2024-11-11 11:51:07,431 DEBUG: Matching DJI_20241111120149_0043_W.JPG and DJI_20241111120155_0045_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.433 T-robust: 0.005 T-total: 0.441 Matches: 1019 Robust: 884 Success: True
+2024-11-11 11:51:07,455 DEBUG: Matching DJI_20241111120022_0005_W.JPG and DJI_20241111120028_0008_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.433 T-robust: 0.002 T-total: 0.436 Matches: 221 Robust: 172 Success: True
+2024-11-11 11:51:07,567 DEBUG: Matching DJI_20241111120054_0019_W.JPG and DJI_20241111120056_0020_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.437 T-robust: 0.009 T-total: 0.452 Matches: 2466 Robust: 2309 Success: True
+2024-11-11 11:51:07,588 DEBUG: Matching DJI_20241111120124_0032_W.JPG and DJI_20241111120136_0036_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.459 T-robust: 0.004 T-total: 0.465 Matches: 689 Robust: 560 Success: True
+2024-11-11 11:51:07,595 DEBUG: Matching DJI_20241111120016_0002_W.JPG and DJI_20241111120108_0024_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.418 T-robust: 0.003 T-total: 0.422 Matches: 458 Robust: 379 Success: True
+2024-11-11 11:51:07,596 DEBUG: Matching DJI_20241111120049_0016_W.JPG and DJI_20241111120029_0009_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.462 T-robust: 0.002 T-total: 0.466 Matches: 163 Robust: 131 Success: True
+2024-11-11 11:51:07,705 DEBUG: Matching DJI_20241111120125_0033_W.JPG and DJI_20241111120122_0031_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.495 T-robust: 0.004 T-total: 0.501 Matches: 806 Robust: 657 Success: True
+2024-11-11 11:51:07,837 DEBUG: Matching DJI_20241111120112_0026_W.JPG and DJI_20241111120100_0022_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.403 T-robust: 0.002 T-total: 0.405 Matches: 392 Robust: 357 Success: True
+2024-11-11 11:51:07,874 DEBUG: Matching DJI_20241111120100_0022_W.JPG and DJI_20241111120108_0024_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.411 T-robust: 0.004 T-total: 0.418 Matches: 1256 Robust: 1200 Success: True
+2024-11-11 11:51:07,912 DEBUG: Matching DJI_20241111120013_0001_W.JPG and DJI_20241111120056_0020_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.320 T-robust: 0.002 T-total: 0.323 Matches: 687 Robust: 563 Success: True
+2024-11-11 11:51:07,974 DEBUG: Matching DJI_20241111120054_0019_W.JPG and DJI_20241111120018_0003_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.376 T-robust: 0.002 T-total: 0.379 Matches: 1018 Robust: 895 Success: True
+2024-11-11 11:51:07,986 DEBUG: Matching DJI_20241111120050_0017_W.JPG and DJI_20241111120020_0004_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.414 T-robust: 0.003 T-total: 0.419 Matches: 626 Robust: 568 Success: True
+2024-11-11 11:51:08,023 DEBUG: Matching DJI_20241111120141_0039_W.JPG and DJI_20241111120137_0037_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.424 T-robust: 0.002 T-total: 0.427 Matches: 925 Robust: 795 Success: True
+2024-11-11 11:51:08,071 DEBUG: Matching DJI_20241111120100_0022_W.JPG and DJI_20241111120056_0020_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.361 T-robust: 0.003 T-total: 0.365 Matches: 1390 Robust: 1241 Success: True
+2024-11-11 11:51:08,174 DEBUG: Matching DJI_20241111120118_0029_W.JPG and DJI_20241111120143_0040_W.JPG.  Matcher: FLANN (symmetric) T-desc: 0.334 T-robust: 0.001 T-total: 0.336 Matches: 277 Robust: 254 Success: True
+2024-11-11 11:51:08,177 INFO: Matched 360 pairs (brown-brown: 360) in 31.01361105700198 seconds (0.08614892242778499 seconds/pair).
+[INFO]    running "/code/SuperBuild/install/bin/opensfm/bin/opensfm" create_tracks "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm"
+2024-11-11 11:51:12,860 INFO: reading features
+2024-11-11 11:51:14,378 DEBUG: Merging features onto tracks
+2024-11-11 11:51:15,859 DEBUG: Good tracks: 55988
+[INFO]    running "/code/SuperBuild/install/bin/opensfm/bin/opensfm" reconstruct "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm"
+2024-11-11 11:51:19,075 INFO: Starting incremental reconstruction
+2024-11-11 11:51:22,023 INFO: Starting reconstruction with DJI_20241111120018_0003_W.JPG and DJI_20241111120020_0004_W.JPG
+2024-11-11 11:51:22,079 INFO: Two-view 5-points reconstruction inliers (transposed=False): 2570 / 2573
+2024-11-11 11:51:22,929 INFO: Triangulated: 2571
+2024-11-11 11:51:23,770 DEBUG: Ceres Solver Report: Iterations: 20, Initial cost: 3.991179e+02, Final cost: 1.124180e+02, Termination: CONVERGENCE
+2024-11-11 11:51:23,790 INFO: Removed outliers: 98
+2024-11-11 11:51:23,825 INFO: -------------------------------------------------------
+2024-11-11 11:51:23,840 INFO: DJI_20241111120016_0002_W.JPG resection inliers: 1146 / 1171
+2024-11-11 11:51:23,853 INFO: Adding DJI_20241111120016_0002_W.JPG to the reconstruction
+2024-11-11 11:51:24,223 WARNING: Shots and/or GCPs are aligned on a single-line. Using vertical prior
+2024-11-11 11:51:24,620 DEBUG: Ceres Solver Report: Iterations: 16, Initial cost: 6.897826e+02, Final cost: 2.840926e+02, Termination: CONVERGENCE
+2024-11-11 11:51:24,666 INFO: Removed outliers: 91
+2024-11-11 11:51:24,682 INFO: -------------------------------------------------------
+2024-11-11 11:51:24,696 INFO: DJI_20241111120013_0001_W.JPG resection inliers: 1142 / 1189
+2024-11-11 11:51:24,709 INFO: Adding DJI_20241111120013_0001_W.JPG to the reconstruction
+2024-11-11 11:51:24,946 INFO: Re-triangulating
+2024-11-11 11:51:24,946 WARNING: Shots and/or GCPs are aligned on a single-line. Using vertical prior
+2024-11-11 11:51:25,435 DEBUG: Ceres Solver Report: Iterations: 13, Initial cost: 7.540982e+02, Final cost: 4.239711e+02, Termination: CONVERGENCE
+2024-11-11 11:51:27,095 DEBUG: Ceres Solver Report: Iterations: 12, Initial cost: 7.501291e+02, Final cost: 4.927362e+02, Termination: CONVERGENCE
+2024-11-11 11:51:27,193 INFO: Removed outliers: 223
+2024-11-11 11:51:27,217 INFO: -------------------------------------------------------
+2024-11-11 11:51:27,266 INFO: DJI_20241111120056_0020_W.JPG resection inliers: 622 / 1307
+2024-11-11 11:51:27,277 INFO: Adding DJI_20241111120056_0020_W.JPG to the reconstruction
+2024-11-11 11:51:27,565 INFO: -------------------------------------------------------
+2024-11-11 11:51:27,595 INFO: DJI_20241111120054_0019_W.JPG resection inliers: 670 / 1457
+2024-11-11 11:51:27,603 INFO: Adding DJI_20241111120054_0019_W.JPG to the reconstruction
+2024-11-11 11:51:27,976 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2024-11-11 11:51:28,754 DEBUG: Ceres Solver Report: Iterations: 11, Initial cost: 1.392084e+04, Final cost: 6.987717e+02, Termination: CONVERGENCE
+2024-11-11 11:51:28,854 INFO: Removed outliers: 123
+2024-11-11 11:51:28,873 INFO: -------------------------------------------------------
+2024-11-11 11:51:28,893 INFO: DJI_20241111120052_0018_W.JPG resection inliers: 1656 / 1723
+2024-11-11 11:51:28,910 INFO: Adding DJI_20241111120052_0018_W.JPG to the reconstruction
+2024-11-11 11:51:29,241 INFO: -------------------------------------------------------
+2024-11-11 11:51:29,261 INFO: DJI_20241111120058_0021_W.JPG resection inliers: 1816 / 1871
+2024-11-11 11:51:29,280 INFO: Adding DJI_20241111120058_0021_W.JPG to the reconstruction
+2024-11-11 11:51:29,590 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2024-11-11 11:51:30,536 DEBUG: Ceres Solver Report: Iterations: 14, Initial cost: 2.087595e+03, Final cost: 1.177472e+03, Termination: CONVERGENCE
+2024-11-11 11:51:30,655 INFO: Removed outliers: 225
+2024-11-11 11:51:30,674 INFO: -------------------------------------------------------
+2024-11-11 11:51:30,694 INFO: DJI_20241111120100_0022_W.JPG resection inliers: 2006 / 2045
+2024-11-11 11:51:30,714 INFO: Adding DJI_20241111120100_0022_W.JPG to the reconstruction
+2024-11-11 11:51:31,037 INFO: Re-triangulating
+2024-11-11 11:51:31,037 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2024-11-11 11:51:32,424 DEBUG: Ceres Solver Report: Iterations: 9, Initial cost: 1.683761e+03, Final cost: 1.270401e+03, Termination: CONVERGENCE
+2024-11-11 11:51:36,784 DEBUG: Ceres Solver Report: Iterations: 14, Initial cost: 2.881198e+03, Final cost: 1.695633e+03, Termination: CONVERGENCE
+2024-11-11 11:51:36,965 INFO: Removed outliers: 653
+2024-11-11 11:51:36,985 INFO: -------------------------------------------------------
+2024-11-11 11:51:37,007 INFO: DJI_20241111120104_0023_W.JPG resection inliers: 1980 / 2043
+2024-11-11 11:51:37,025 INFO: Adding DJI_20241111120104_0023_W.JPG to the reconstruction
+2024-11-11 11:51:37,295 INFO: -------------------------------------------------------
+2024-11-11 11:51:37,317 INFO: DJI_20241111120108_0024_W.JPG resection inliers: 2104 / 2180
+2024-11-11 11:51:37,338 INFO: Adding DJI_20241111120108_0024_W.JPG to the reconstruction
+2024-11-11 11:51:37,567 INFO: -------------------------------------------------------
+2024-11-11 11:51:37,588 INFO: DJI_20241111120110_0025_W.JPG resection inliers: 2132 / 2243
+2024-11-11 11:51:37,612 INFO: Adding DJI_20241111120110_0025_W.JPG to the reconstruction
+2024-11-11 11:51:37,854 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2024-11-11 11:51:39,310 DEBUG: Ceres Solver Report: Iterations: 12, Initial cost: 3.311453e+03, Final cost: 2.120246e+03, Termination: CONVERGENCE
+2024-11-11 11:51:39,531 INFO: Removed outliers: 307
+2024-11-11 11:51:39,553 INFO: -------------------------------------------------------
+2024-11-11 11:51:39,577 INFO: DJI_20241111120112_0026_W.JPG resection inliers: 2040 / 2101
+2024-11-11 11:51:39,599 INFO: Adding DJI_20241111120112_0026_W.JPG to the reconstruction
+2024-11-11 11:51:39,911 INFO: -------------------------------------------------------
+2024-11-11 11:51:39,932 INFO: DJI_20241111120050_0017_W.JPG resection inliers: 1563 / 1644
+2024-11-11 11:51:39,950 INFO: Adding DJI_20241111120050_0017_W.JPG to the reconstruction
+2024-11-11 11:51:40,274 INFO: -------------------------------------------------------
+2024-11-11 11:51:40,298 INFO: DJI_20241111120114_0027_W.JPG resection inliers: 1618 / 1700
+2024-11-11 11:51:40,350 INFO: Adding DJI_20241111120114_0027_W.JPG to the reconstruction
+2024-11-11 11:51:40,662 INFO: -------------------------------------------------------
+2024-11-11 11:51:40,682 INFO: DJI_20241111120022_0005_W.JPG resection inliers: 1560 / 1615
+2024-11-11 11:51:40,700 INFO: Adding DJI_20241111120022_0005_W.JPG to the reconstruction
+2024-11-11 11:51:41,015 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2024-11-11 11:51:43,526 DEBUG: Ceres Solver Report: Iterations: 11, Initial cost: 4.272790e+03, Final cost: 2.666784e+03, Termination: CONVERGENCE
+2024-11-11 11:51:43,792 INFO: Removed outliers: 339
+2024-11-11 11:51:43,814 INFO: -------------------------------------------------------
+2024-11-11 11:51:43,831 INFO: DJI_20241111120049_0016_W.JPG resection inliers: 1450 / 1505
+2024-11-11 11:51:43,845 INFO: Adding DJI_20241111120049_0016_W.JPG to the reconstruction
+2024-11-11 11:51:44,126 INFO: -------------------------------------------------------
+2024-11-11 11:51:44,145 INFO: DJI_20241111120147_0042_W.JPG resection inliers: 1433 / 1502
+2024-11-11 11:51:44,161 INFO: Adding DJI_20241111120147_0042_W.JPG to the reconstruction
+2024-11-11 11:51:44,444 INFO: -------------------------------------------------------
+2024-11-11 11:51:44,464 INFO: DJI_20241111120149_0043_W.JPG resection inliers: 1513 / 1580
+2024-11-11 11:51:44,501 INFO: Adding DJI_20241111120149_0043_W.JPG to the reconstruction
+2024-11-11 11:51:44,949 INFO: -------------------------------------------------------
+2024-11-11 11:51:44,975 INFO: DJI_20241111120145_0041_W.JPG resection inliers: 1995 / 2089
+2024-11-11 11:51:44,996 INFO: Adding DJI_20241111120145_0041_W.JPG to the reconstruction
+2024-11-11 11:51:45,372 INFO: Re-triangulating
+2024-11-11 11:51:45,373 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2024-11-11 11:51:48,220 DEBUG: Ceres Solver Report: Iterations: 10, Initial cost: 4.249331e+03, Final cost: 3.205698e+03, Termination: CONVERGENCE
+2024-11-11 11:51:56,741 DEBUG: Ceres Solver Report: Iterations: 14, Initial cost: 7.318736e+03, Final cost: 4.105636e+03, Termination: CONVERGENCE
+2024-11-11 11:51:57,060 INFO: Removed outliers: 1781
+2024-11-11 11:51:57,083 INFO: -------------------------------------------------------
+2024-11-11 11:51:57,103 INFO: DJI_20241111120143_0040_W.JPG resection inliers: 1804 / 1854
+2024-11-11 11:51:57,123 INFO: Adding DJI_20241111120143_0040_W.JPG to the reconstruction
+2024-11-11 11:51:57,399 INFO: -------------------------------------------------------
+2024-11-11 11:51:57,416 INFO: DJI_20241111120151_0044_W.JPG resection inliers: 1798 / 1857
+2024-11-11 11:51:57,433 INFO: Adding DJI_20241111120151_0044_W.JPG to the reconstruction
+2024-11-11 11:51:57,679 INFO: -------------------------------------------------------
+2024-11-11 11:51:57,697 INFO: DJI_20241111120141_0039_W.JPG resection inliers: 1581 / 1665
+2024-11-11 11:51:57,713 INFO: Adding DJI_20241111120141_0039_W.JPG to the reconstruction
+2024-11-11 11:51:57,954 INFO: -------------------------------------------------------
+2024-11-11 11:51:57,969 INFO: DJI_20241111120116_0028_W.JPG resection inliers: 1747 / 1802
+2024-11-11 11:51:57,987 INFO: Adding DJI_20241111120116_0028_W.JPG to the reconstruction
+2024-11-11 11:51:58,253 INFO: -------------------------------------------------------
+2024-11-11 11:51:58,277 INFO: DJI_20241111120139_0038_W.JPG resection inliers: 1571 / 1683
+2024-11-11 11:51:58,296 INFO: Adding DJI_20241111120139_0038_W.JPG to the reconstruction
+2024-11-11 11:51:58,612 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2024-11-11 11:52:01,909 DEBUG: Ceres Solver Report: Iterations: 10, Initial cost: 5.429121e+03, Final cost: 4.020534e+03, Termination: CONVERGENCE
+2024-11-11 11:52:02,313 INFO: Removed outliers: 656
+2024-11-11 11:52:02,339 INFO: -------------------------------------------------------
+2024-11-11 11:52:02,359 INFO: DJI_20241111120118_0029_W.JPG resection inliers: 1551 / 1610
+2024-11-11 11:52:02,373 INFO: Adding DJI_20241111120118_0029_W.JPG to the reconstruction
+2024-11-11 11:52:02,597 INFO: -------------------------------------------------------
+2024-11-11 11:52:02,613 INFO: DJI_20241111120137_0037_W.JPG resection inliers: 1569 / 1646
+2024-11-11 11:52:02,628 INFO: Adding DJI_20241111120137_0037_W.JPG to the reconstruction
+2024-11-11 11:52:02,878 INFO: -------------------------------------------------------
+2024-11-11 11:52:02,893 INFO: DJI_20241111120024_0006_W.JPG resection inliers: 1490 / 1542
+2024-11-11 11:52:02,907 INFO: Adding DJI_20241111120024_0006_W.JPG to the reconstruction
+2024-11-11 11:52:03,142 INFO: -------------------------------------------------------
+2024-11-11 11:52:03,160 INFO: DJI_20241111120046_0015_W.JPG resection inliers: 1587 / 1657
+2024-11-11 11:52:03,177 INFO: Adding DJI_20241111120046_0015_W.JPG to the reconstruction
+2024-11-11 11:52:03,476 INFO: -------------------------------------------------------
+2024-11-11 11:52:03,496 INFO: DJI_20241111120120_0030_W.JPG resection inliers: 1581 / 1683
+2024-11-11 11:52:03,513 INFO: Adding DJI_20241111120120_0030_W.JPG to the reconstruction
+2024-11-11 11:52:03,804 INFO: -------------------------------------------------------
+2024-11-11 11:52:03,824 INFO: DJI_20241111120045_0014_W.JPG resection inliers: 1625 / 1742
+2024-11-11 11:52:03,842 INFO: Adding DJI_20241111120045_0014_W.JPG to the reconstruction
+2024-11-11 11:52:04,147 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2024-11-11 11:52:08,872 DEBUG: Ceres Solver Report: Iterations: 12, Initial cost: 6.043883e+03, Final cost: 4.749168e+03, Termination: CONVERGENCE
+2024-11-11 11:52:09,409 INFO: Removed outliers: 652
+2024-11-11 11:52:09,439 INFO: -------------------------------------------------------
+2024-11-11 11:52:09,460 INFO: DJI_20241111120026_0007_W.JPG resection inliers: 1751 / 1830
+2024-11-11 11:52:09,497 INFO: Adding DJI_20241111120026_0007_W.JPG to the reconstruction
+2024-11-11 11:52:09,823 INFO: -------------------------------------------------------
+2024-11-11 11:52:09,849 INFO: DJI_20241111120028_0008_W.JPG resection inliers: 1688 / 1776
+2024-11-11 11:52:09,871 INFO: Adding DJI_20241111120028_0008_W.JPG to the reconstruction
+2024-11-11 11:52:10,231 INFO: -------------------------------------------------------
+2024-11-11 11:52:10,252 INFO: DJI_20241111120043_0013_W.JPG resection inliers: 1656 / 1734
+2024-11-11 11:52:10,268 INFO: Adding DJI_20241111120043_0013_W.JPG to the reconstruction
+2024-11-11 11:52:10,552 INFO: -------------------------------------------------------
+2024-11-11 11:52:10,573 INFO: DJI_20241111120122_0031_W.JPG resection inliers: 1714 / 1792
+2024-11-11 11:52:10,590 INFO: Adding DJI_20241111120122_0031_W.JPG to the reconstruction
+2024-11-11 11:52:10,888 INFO: -------------------------------------------------------
+2024-11-11 11:52:10,912 INFO: DJI_20241111120136_0036_W.JPG resection inliers: 1728 / 1835
+2024-11-11 11:52:10,930 INFO: Adding DJI_20241111120136_0036_W.JPG to the reconstruction
+2024-11-11 11:52:11,285 INFO: -------------------------------------------------------
+2024-11-11 11:52:11,309 INFO: DJI_20241111120133_0035_W.JPG resection inliers: 1755 / 1916
+2024-11-11 11:52:11,328 INFO: Adding DJI_20241111120133_0035_W.JPG to the reconstruction
+2024-11-11 11:52:11,663 INFO: -------------------------------------------------------
+2024-11-11 11:52:11,684 INFO: DJI_20241111120124_0032_W.JPG resection inliers: 1854 / 1964
+2024-11-11 11:52:11,702 INFO: Adding DJI_20241111120124_0032_W.JPG to the reconstruction
+2024-11-11 11:52:12,029 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2024-11-11 11:52:18,363 DEBUG: Ceres Solver Report: Iterations: 13, Initial cost: 8.225787e+03, Final cost: 5.668715e+03, Termination: CONVERGENCE
+2024-11-11 11:52:19,029 INFO: Removed outliers: 692
+2024-11-11 11:52:19,060 INFO: -------------------------------------------------------
+2024-11-11 11:52:19,082 INFO: DJI_20241111120130_0034_W.JPG resection inliers: 1703 / 1806
+2024-11-11 11:52:19,099 INFO: Adding DJI_20241111120130_0034_W.JPG to the reconstruction
+2024-11-11 11:52:19,467 INFO: -------------------------------------------------------
+2024-11-11 11:52:19,491 INFO: DJI_20241111120125_0033_W.JPG resection inliers: 2201 / 2278
+2024-11-11 11:52:19,545 INFO: Adding DJI_20241111120125_0033_W.JPG to the reconstruction
+2024-11-11 11:52:19,967 INFO: -------------------------------------------------------
+2024-11-11 11:52:19,989 INFO: DJI_20241111120029_0009_W.JPG resection inliers: 1824 / 1908
+2024-11-11 11:52:20,007 INFO: Adding DJI_20241111120029_0009_W.JPG to the reconstruction
+2024-11-11 11:52:20,256 INFO: Re-triangulating
+2024-11-11 11:52:20,258 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2024-11-11 11:52:25,293 DEBUG: Ceres Solver Report: Iterations: 8, Initial cost: 6.561158e+03, Final cost: 5.889688e+03, Termination: CONVERGENCE
+2024-11-11 11:52:42,105 DEBUG: Ceres Solver Report: Iterations: 15, Initial cost: 1.535872e+04, Final cost: 8.438531e+03, Termination: CONVERGENCE
+2024-11-11 11:52:43,054 INFO: Removed outliers: 4479
+2024-11-11 11:52:43,096 INFO: -------------------------------------------------------
+2024-11-11 11:52:43,121 INFO: DJI_20241111120038_0012_W.JPG resection inliers: 1703 / 1768
+2024-11-11 11:52:43,146 INFO: Adding DJI_20241111120038_0012_W.JPG to the reconstruction
+2024-11-11 11:52:43,486 INFO: -------------------------------------------------------
+2024-11-11 11:52:43,522 INFO: DJI_20241111120032_0010_W.JPG resection inliers: 1707 / 1776
+2024-11-11 11:52:43,582 INFO: Adding DJI_20241111120032_0010_W.JPG to the reconstruction
+2024-11-11 11:52:44,012 INFO: -------------------------------------------------------
+2024-11-11 11:52:44,037 INFO: DJI_20241111120035_0011_W.JPG resection inliers: 2009 / 2095
+2024-11-11 11:52:44,097 INFO: Adding DJI_20241111120035_0011_W.JPG to the reconstruction
+2024-11-11 11:52:44,442 INFO: -------------------------------------------------------
+2024-11-11 11:52:44,461 INFO: DJI_20241111120159_0046_W.JPG resection inliers: 1355 / 1425
+2024-11-11 11:52:44,494 INFO: Adding DJI_20241111120159_0046_W.JPG to the reconstruction
+2024-11-11 11:52:44,730 INFO: -------------------------------------------------------
+2024-11-11 11:52:44,749 INFO: DJI_20241111120201_0047_W.JPG resection inliers: 1449 / 1526
+2024-11-11 11:52:44,765 INFO: Adding DJI_20241111120201_0047_W.JPG to the reconstruction
+2024-11-11 11:52:45,103 INFO: -------------------------------------------------------
+2024-11-11 11:52:45,122 INFO: DJI_20241111120203_0048_W.JPG resection inliers: 1744 / 1840
+2024-11-11 11:52:45,166 INFO: Adding DJI_20241111120203_0048_W.JPG to the reconstruction
+2024-11-11 11:52:45,482 INFO: -------------------------------------------------------
+2024-11-11 11:52:45,499 INFO: DJI_20241111120155_0045_W.JPG resection inliers: 1639 / 1702
+2024-11-11 11:52:45,518 INFO: Adding DJI_20241111120155_0045_W.JPG to the reconstruction
+2024-11-11 11:52:45,750 INFO: -------------------------------------------------------
+2024-11-11 11:52:45,752 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2024-11-11 11:52:52,198 DEBUG: Ceres Solver Report: Iterations: 10, Initial cost: 9.402494e+03, Final cost: 7.273354e+03, Termination: CONVERGENCE
+2024-11-11 11:52:53,212 INFO: Removed outliers: 960
+2024-11-11 11:52:53,859 INFO: Reconstruction 0: 48 images, 55155 points
+2024-11-11 11:52:53,860 INFO: 1 partial reconstructions in total.
+[INFO]    Export reconstruction stats
+[INFO]    running "/code/SuperBuild/install/bin/opensfm/bin/opensfm" compute_statistics --diagram_max_points 100000 "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm"
+2024-11-11 11:53:13,352 DEBUG: locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x73f5ad6a2220>
+2024-11-11 11:53:13,353 DEBUG: Using auto colorbar locator <matplotlib.colorbar._ColorbarAutoLocator object at 0x73f5ad6a2220> on colorbar
+2024-11-11 11:53:13,353 DEBUG: Setting pcolormesh
+2024-11-11 11:53:14,853 DEBUG: locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x73f5b3fa9880>
+2024-11-11 11:53:14,853 DEBUG: Using auto colorbar locator <matplotlib.colorbar._ColorbarAutoLocator object at 0x73f5b3fa9880> on colorbar
+2024-11-11 11:53:14,853 DEBUG: Setting pcolormesh
+[INFO]    running "/code/SuperBuild/install/bin/opensfm/bin/opensfm" export_geocoords --reconstruction --proj "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs +type=crs" --offset-x 356603.0 --offset-y 5644965.0 "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm"
+[INFO]    Updating /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/config.yaml
+[INFO]    undistorted_image_max_size: 4000
+[INFO]    Undistorting /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm ...
+2024-11-11 11:53:36,258 DEBUG: Undistorting image DJI_20241111120020_0004_W.JPG
+2024-11-11 11:53:36,258 DEBUG: Undistorting image DJI_20241111120151_0044_W.JPG
+2024-11-11 11:53:36,259 DEBUG: Undistorting image DJI_20241111120108_0024_W.JPG
+2024-11-11 11:53:36,259 DEBUG: Undistorting image DJI_20241111120124_0032_W.JPG
+2024-11-11 11:53:36,259 DEBUG: Undistorting image DJI_20241111120022_0005_W.JPG
+2024-11-11 11:53:36,260 DEBUG: Undistorting image DJI_20241111120137_0037_W.JPG
+2024-11-11 11:53:36,260 DEBUG: Undistorting image DJI_20241111120016_0002_W.JPG
+2024-11-11 11:53:36,260 DEBUG: Undistorting image DJI_20241111120136_0036_W.JPG
+2024-11-11 11:53:42,354 DEBUG: Undistorting image DJI_20241111120201_0047_W.JPG
+2024-11-11 11:53:43,155 DEBUG: Undistorting image DJI_20241111120159_0046_W.JPG
+2024-11-11 11:53:44,374 DEBUG: Undistorting image DJI_20241111120029_0009_W.JPG
+2024-11-11 11:53:45,907 DEBUG: Undistorting image DJI_20241111120056_0020_W.JPG
+2024-11-11 11:53:47,436 DEBUG: Undistorting image DJI_20241111120026_0007_W.JPG
+2024-11-11 11:53:47,438 DEBUG: Undistorting image DJI_20241111120038_0012_W.JPG
+2024-11-11 11:53:47,442 DEBUG: Undistorting image DJI_20241111120110_0025_W.JPG
+2024-11-11 11:53:47,446 DEBUG: Undistorting image DJI_20241111120054_0019_W.JPG
+2024-11-11 11:53:49,882 DEBUG: Undistorting image DJI_20241111120130_0034_W.JPG
+2024-11-11 11:53:50,588 DEBUG: Undistorting image DJI_20241111120043_0013_W.JPG
+2024-11-11 11:53:51,280 DEBUG: Undistorting image DJI_20241111120052_0018_W.JPG
+2024-11-11 11:53:51,864 DEBUG: Undistorting image DJI_20241111120145_0041_W.JPG
+2024-11-11 11:53:52,638 DEBUG: Undistorting image DJI_20241111120112_0026_W.JPG
+2024-11-11 11:53:54,394 DEBUG: Undistorting image DJI_20241111120122_0031_W.JPG
+2024-11-11 11:53:54,396 DEBUG: Undistorting image DJI_20241111120118_0029_W.JPG
+2024-11-11 11:53:55,121 DEBUG: Undistorting image DJI_20241111120035_0011_W.JPG
+2024-11-11 11:53:56,406 DEBUG: Undistorting image DJI_20241111120050_0017_W.JPG
+2024-11-11 11:53:56,408 DEBUG: Undistorting image DJI_20241111120133_0035_W.JPG
+2024-11-11 11:53:57,517 DEBUG: Undistorting image DJI_20241111120013_0001_W.JPG
+2024-11-11 11:53:58,215 DEBUG: Undistorting image DJI_20241111120143_0040_W.JPG
+2024-11-11 11:53:59,168 DEBUG: Undistorting image DJI_20241111120147_0042_W.JPG
+2024-11-11 11:54:00,070 DEBUG: Undistorting image DJI_20241111120149_0043_W.JPG
+2024-11-11 11:54:00,890 DEBUG: Undistorting image DJI_20241111120141_0039_W.JPG
+2024-11-11 11:54:01,630 DEBUG: Undistorting image DJI_20241111120024_0006_W.JPG
+2024-11-11 11:54:03,493 DEBUG: Undistorting image DJI_20241111120104_0023_W.JPG
+2024-11-11 11:54:03,495 DEBUG: Undistorting image DJI_20241111120046_0015_W.JPG
+2024-11-11 11:54:04,187 DEBUG: Undistorting image DJI_20241111120049_0016_W.JPG
+2024-11-11 11:54:04,898 DEBUG: Undistorting image DJI_20241111120116_0028_W.JPG
+2024-11-11 11:54:05,853 DEBUG: Undistorting image DJI_20241111120120_0030_W.JPG
+2024-11-11 11:54:06,882 DEBUG: Undistorting image DJI_20241111120125_0033_W.JPG
+2024-11-11 11:54:07,708 DEBUG: Undistorting image DJI_20241111120203_0048_W.JPG
+2024-11-11 11:54:08,434 DEBUG: Undistorting image DJI_20241111120139_0038_W.JPG
+2024-11-11 11:54:09,699 DEBUG: Undistorting image DJI_20241111120032_0010_W.JPG
+2024-11-11 11:54:09,703 DEBUG: Undistorting image DJI_20241111120018_0003_W.JPG
+2024-11-11 11:54:10,379 DEBUG: Undistorting image DJI_20241111120114_0027_W.JPG
+2024-11-11 11:54:11,087 DEBUG: Undistorting image DJI_20241111120028_0008_W.JPG
+2024-11-11 11:54:11,875 DEBUG: Undistorting image DJI_20241111120045_0014_W.JPG
+2024-11-11 11:54:13,101 DEBUG: Undistorting image DJI_20241111120100_0022_W.JPG
+2024-11-11 11:54:13,984 DEBUG: Undistorting image DJI_20241111120058_0021_W.JPG
+2024-11-11 11:54:14,948 DEBUG: Undistorting image DJI_20241111120155_0045_W.JPG
+[INFO]    running "/code/SuperBuild/install/bin/opensfm/bin/opensfm" export_visualsfm --points "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm"
+[INFO]    running "/code/SuperBuild/install/bin/opensfm/bin/opensfm" export_ply --no-cameras --point-num-views "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm"
+[INFO]    Finished opensfm stage
+[INFO]    Running odm_filterpoints stage
+2024-11-11 11:54:31,525 DEBUG: Entering env context: <fiona.env.Env object at 0x7367591499a0>
+2024-11-11 11:54:31,526 DEBUG: Starting outermost env
+2024-11-11 11:54:31,526 DEBUG: No GDAL environment exists
+2024-11-11 11:54:31,526 DEBUG: New GDAL environment <fiona._env.GDALEnv object at 0x736759149700> created
+2024-11-11 11:54:31,526 DEBUG: Logging error handler pushed.
+2024-11-11 11:54:31,527 DEBUG: All drivers registered.
+2024-11-11 11:54:31,527 DEBUG: GDAL data files are available at built-in paths
+2024-11-11 11:54:31,527 DEBUG: PROJ data files are available at built-in paths
+2024-11-11 11:54:31,528 DEBUG: Started GDALEnv <fiona._env.GDALEnv object at 0x736759149700>.
+2024-11-11 11:54:31,528 DEBUG: Updated existing <fiona._env.GDALEnv object at 0x736759149700> with options {}
+2024-11-11 11:54:31,528 DEBUG: Entered env context: <fiona.env.Env object at 0x7367591499a0>
+2024-11-11 11:54:31,528 DEBUG: Got a copy of environment <fiona._env.GDALEnv object at 0x736759149700> options
+2024-11-11 11:54:31,528 DEBUG: Credentialized: {'CHECK_WITH_INVERT_PROJ': True, 'GTIFF_IMPLICIT_JPEG_OVR': False, 'FIONA_ENV': True}
+2024-11-11 11:54:31,528 DEBUG: Exiting env context: <fiona.env.Env object at 0x7367591499a0>
+2024-11-11 11:54:31,528 DEBUG: Cleared existing <fiona._env.GDALEnv object at 0x736759149700> options
+2024-11-11 11:54:31,528 DEBUG: Stopping GDALEnv <fiona._env.GDALEnv object at 0x736759149700>.
+2024-11-11 11:54:31,528 DEBUG: Error handler popped.
+2024-11-11 11:54:31,528 DEBUG: Stopped GDALEnv <fiona._env.GDALEnv object at 0x736759149700>.
+2024-11-11 11:54:31,528 DEBUG: Exiting outermost env
+2024-11-11 11:54:31,528 DEBUG: Exited env context: <fiona.env.Env object at 0x7367591499a0>
+2024-11-11 11:54:31,535 DEBUG: Flushed buffer
+2024-11-11 11:54:31,535 DEBUG: Stopped session
+[INFO]    Filtering /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/reconstruction.ply (statistical, meanK 16, standard deviation 5)
+[INFO]    Boundary [(49.48896847962169, -435.21784556563944), (31.38362004928058, -438.45989004615694), (13.133831378945615, -440.75329530704767), (-5.21072768594604, -442.0918194623664), (-23.60012936667772, -442.47181949485093), (-41.98432383779436, -441.89226117171347), (-60.31327544600936, -440.35472185723484), (-78.53709889081074, -437.86338622123003), (-96.60619499563472, -434.42503484897316), (-114.47138569998788, -430.04902578890324), (-132.08404790604254, -424.74726907815784), (-149.3962458144524, -418.5341943334788), (-166.36086138954852, -411.4267114745453), (-182.9317225990817, -403.4441647026688), (-199.06372907885816, -394.6082798494026), (-214.71297488111304, -384.943105250597), (-229.83686797198607, -374.47494629211724), (-244.39424615248572, -363.23229381628335), (-258.3454890886205, -351.24574657622725), (-271.65262614458334, -338.54792796075344), (-284.27943972614594, -325.17339720390737), (-296.1915638530045, -311.1585553213954), (-307.35657769133104, -296.5415460448712), (-314.99160079681315, -285.9861157350242), (-325.8952243824606, -270.0062598148361), (-335.90594922268065, -253.45240253861994), (-344.9936358437408, -236.37438291031867), (-353.1309237800888, -218.82361803855747), (-360.29331394896144, -200.85294833499938), (-366.4592424101429, -182.51647842489183), (-371.61014528927626, -163.86941425688565), (-375.73051466810284, -144.96789689175785), (-378.8079452745733, -125.86883347481489), (-380.83317183161853, -106.62972590886056), (-384.63703896303196, -57.60868368949741), (-384.6738368042861, -57.13024313841015), (-389.5420832702657, 6.734421354718506), (-389.65278187580407, 8.22851397562772), (-390.82820851070574, 24.56412830762565), (-390.8652024156181, 25.08361457567662), (-392.17106927535497, 43.614384615793824), (-392.98700836498756, 62.100867975503206), (-392.83189717982896, 80.60469904262573), (-391.70616299880203, 99.07490603066981), (-389.61290683801053, 117.46060977783054), (-386.5578949090559, 135.71116389892995), (-382.5495427346905, 153.776294301264), (-377.59889196703443, 171.60623767226934), (-371.71957997162826, 189.15187855809927), (-364.9278022610815, 206.3648846624419), (-357.2422678817529, 223.1978399856016), (-348.6841478769784, 239.604375439696), (-339.27701696770964, 255.53929657768458), (-329.0467886123224, 270.958708091639), (-318.0216436238261, 285.82013472542167), (-306.23195254121674, 300.08263828605413), (-293.71019196888665, 313.7069304063916), (-280.4908551146509, 326.65548077970743), (-266.6103567726677, 338.8926205355674), (-252.10693301301217, 350.38464049994946), (-237.02053585415706, 361.0998840527609), (-221.3927232088172, 371.00883432663977), (-205.2665444058366, 380.0841955235228), (-188.68642160412855, 388.3009680956602), (-171.69802742439788, 395.6365176187828), (-154.34815913671628, 402.0706371413544), (-136.6846097499365, 407.5856028422713), (-102.10812697641086, 417.39310569502413), (-84.20474099687999, 421.96798921655864), (-66.08625040267361, 425.5985659416765), (-47.802426291338634, 428.27486275509), (-29.40349392790813, 429.9895279277116), (-10.939994777436368, 430.73785131331533), (7.537352331681177, 430.5177772818133), (38.87544309702935, 429.3226302647963), (47.023362561594695, 428.9174399198964), (63.008284184208605, 427.9370087319985), (81.0751214910415, 426.36158285848796), (99.03704757319065, 423.8592262947932), (116.8465375166852, 420.43655995093286), (134.45646973361727, 416.1026397543028), (151.82025063975016, 410.8689326932654), (168.89193793508457, 404.74928647466004), (185.62636216141982, 397.7598928846419), (201.97924621438142, 389.9192449450493), (217.90732249541907, 381.2480879900977), (233.36844739166554, 371.76936476957053), (248.32171278301394, 361.508154748939), (262.7275542790885, 350.4916077516973), (276.54785590205574, 338.74887212459), (289.7460509359371, 326.3110176147893), (302.2872186778113, 313.2109531639144), (314.13817683339585, 299.483339834027), (325.2675693127094, 285.16449909843504), (335.64594919467345, 270.292316744104), (345.24585663946345, 254.90614262595773), (354.04189154389314, 239.04668655339628), (362.0107807466993, 222.75591058004647), (369.13143960619345, 206.076917973347), (375.38502778764814, 189.05383917409927), (380.7549991121632, 171.73171502817422), (385.2660128012649, 155.7368921637535), (389.7472406514571, 138.1215791972354), (393.31467079382855, 120.29872599989176), (395.95882156689186, 102.31570287700742), (397.6726652387879, 84.22030584327877), (399.7838757412974, 53.51534746866673), (400.5506962618092, 36.02949397172779), (400.4487827036064, 18.527131277136505), (399.47838622896234, 1.0513933263719082), (397.64189834479475, -16.354651557281613), (394.9438450091402, -33.648106805980206), (391.39087547687814, -50.78635332453996), (373.49510470376117, -127.47941496223211), (369.57140889315633, -142.74427092261612), (364.9694096912863, -157.81851450819522), (353.69138975063106, -192.00489867292345), (347.4410490029841, -209.40398243721575), (340.2872548637679, -226.45150732342154), (332.2496778758941, -243.10059833340347), (323.35041868989356, -259.3054760331288), (313.613947294245, -275.02158242370933), (303.06703573133564, -290.205703465268), (291.7386844830471, -304.8160878987983), (279.66004272934515, -318.8125620512292), (266.86432269826764, -332.1566402958706), (253.38670834340155, -344.8116308776662), (239.2642585998983, -356.74273680057377), (224.53580548480386, -367.91715151257813), (209.24184732168214, -378.3041491061449), (193.42443738423754, -387.87516881059855), (177.12706826342037, -396.6038935203105), (160.3945522775757, -404.4663221584633), (143.2728982535191, -411.44083567522466), (125.80918501771521, -417.508256489411), (108.05143194494303, -422.6519012199715), (90.04846692143474, -426.85762656480074), (49.48896847962169, -435.21784556563944)]
+[INFO]    running "/code/SuperBuild/install/bin/FPCFilter" --input "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/reconstruction.ply" --output "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_filterpoints/point_cloud.ply" --concurrency 8 --meank 16 --std 5 --stats "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_filterpoints/point_cloud_stats.json" --boundary "/tmp/tmp3cfrijcz.boundary.json"
+*** FPCFilter - v0.2 ***
+
+?> Parameters:
+input = /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/reconstruction.ply
+output = /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_filterpoints/point_cloud.ply
+stats = /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_filterpoints/point_cloud_stats.json
+std = 5
+meanK = 16
+boundary = 138 polygon vertexes
+concurrency = 8
+verbose = no
+
+-> Setting num_threads to 8
+
+-> Cropping
+
+-> Done cropping in 0.1774s
+
+?> Skipping sampling
+
+-> Statistical filtering
+
+-> Spacing estimation completed (0.39 meters)
+
+?> Done in 0.1821s
+
+-> Writing output
+
+?> Done in 0.02048s
+
+?> Pipeline done in 0.3804s
+
+[INFO]    Finished odm_filterpoints stage
+[INFO]    Running odm_meshing stage
+[INFO]    Writing ODM 2.5D Mesh file in: /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/odm_25dmesh.ply
+[INFO]    ODM 2.5D DSM resolution: 0.39
+[INFO]    Created temporary directory: /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp
+[INFO]    Creating DSM for 2.5D mesh
+[INFO]    running renderdem "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_filterpoints/point_cloud.ply" --outdir "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp" --output-type max --radiuses 0.6126105674500096,0.8663621729408814,1.2252211349000193 --resolution 3.12 --max-tiles 0 --decimation 1 --classification -1 --tile-size 4096 --force
+Reading 55083 points
+Point cloud bounds are [minx: -110.433517456, maxx: 120.799377441, miny: -148.918807983, maxy: 143.833984375]
+DEM resolution is (75, 94), max tile size is 4096, will split DEM generation into 1 tiles
+r0.866362_x0_y0.tif
+r1.22522_x0_y0.tif
+r0.612611_x0_y0.tif
+[INFO]    Generated 3 tiles
+[INFO]    running gdalbuildvrt -input_file_list "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/tiles_list.txt" "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/tiles.vrt"
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    running gdal_translate -co NUM_THREADS=8 -co BIGTIFF=IF_SAFER -co COMPRESS=DEFLATE --config GDAL_CACHEMAX 22.8% -outsize 10% 0 "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/tiles.vrt" "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/tiles.small.tif"
+0
+...10...20...30...40...50
+...60...70...80.
+..90.
+Input file size is 75, 94
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    running gdalbuildvrt -resolution highest -r bilinear "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/merged.vrt" "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/tiles.small_filled.tif" "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/tiles.vrt"
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    running gdal_translate -co NUM_THREADS=8 -co TILED=YES -co BIGTIFF=IF_SAFER -co COMPRESS=DEFLATE --config GDAL_CACHEMAX 22.8% "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/merged.vrt" "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/tiles.tif"
+Input file size is 75, 94
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    running fastrasterfilter "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/tiles.tif" --output "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/mesh_dsm.tif" --window-size 512 --radius 4 --co TILED=YES --co BIGTIFF=IF_SAFER --co COMPRESS=DEFLATE
+Input: /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/tiles.tif
+Size: 75x94
+Blocks: 1
+Smoothing...1... done
+Wrote /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/mesh_dsm.tif
+[INFO]    Completed smoothing to create /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/mesh_dsm.tif in 0:00:00.142364
+[INFO]    Completed mesh_dsm.tif in 0:00:01.153169
+[INFO]    Sampling points from DSM: /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/mesh_dsm.tif
+[INFO]    running "/code/SuperBuild/install/bin/dem2points" -inputFile "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/mesh_dsm.tif" -outputFile "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/dsm_points.ply" -skirtHeightThreshold 1.5 -skirtIncrements 0.2 -skirtHeightCap 100 -verbose
+Running with parameters:
+--inputFile /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/mesh_dsm.tif
+--outputFile /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/dsm_points.ply
+--skirtHeightThreshold 1.500000
+--skirtIncrements 0.200000
+--skirtHeightCap 100.000000
+--verbose
+Raster Size is 75x94
+Extent is (-110.433517, 123.566483), (-148.918808, 144.361192)
+Read nodata value: -9999
+Calculating skirts and vertex count... 28240 skirt points will be added
+Total vertices: 34630
+Sampling and writing to file... done!
+[INFO]    running "/code/SuperBuild/install/bin/PoissonRecon" --in "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/tmp/dsm_points.ply" --out "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/odm_25dmesh.dirty.ply" --depth 11 --pointWeight 4 --samplesPerNode 1.0 --threads 7 --bType 2 --linearFit
+[INFO]    running "/code/SuperBuild/install/bin/OpenMVS/ReconstructMesh" -i "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/odm_25dmesh.dirty.ply" -o "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/odm_25dmesh.ply" --archive-type 3 --remove-spikes 0 --remove-spurious 20 --smooth 0 --target-face-num 400000 -v 0
+11:54:40 [App     ] OpenMVS x64 v2.2.0
+11:54:40 [App     ] Build date: Oct 21 2024, 17:37:12
+11:54:40 [App     ] CPU: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz (8 cores)
+11:54:40 [App     ] RAM: 7.52GB Physical Memory 7.29GB Virtual Memory
+11:54:40 [App     ] OS: Linux 6.8.0-47-generic (x86_64)
+11:54:40 [App     ] Disk:
+11:54:40 [App     ] SSE & AVX compatible CPU & OS detected
+11:54:40 [App     ] Command line: ReconstructMesh -i /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/odm_25dmesh.dirty.ply -o /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/odm_25dmesh.ply --archive-type 3 --remove-spikes 0 --remove-spurious 20 --smooth 0 --target-face-num 400000 -v 0
+
+Decimated faces 20800 (24.71%, 525ms, ETA 1s)...
+Decimated faces 37496 (44.54%, 625ms, ETA 778ms)...
+Decimated faces 52976 (62.93%, 725ms, ETA 427ms)...
+Decimated faces 66146 (78.58%, 825ms, ETA 225ms)...
+Decimated faces 77184 (91.69%, 925ms, ETA 83ms)...
+Decimated faces 84180 (100%, 980ms)
+11:54:44 [App     ] MEMORYINFO: {
+11:54:44 [App     ] 	VmPeak:	  260232 kB
+11:54:44 [App     ] 	VmSize:	   77016 kB
+11:54:44 [App     ] } ENDINFO
+[INFO]    Finished odm_meshing stage
+[INFO]    Running mvs_texturing stage
+[INFO]    Writing MVS Textured file in: /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_texturing_25d/odm_textured_model_geo.obj
+[INFO]    running "/code/SuperBuild/install/bin/texrecon" "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/undistorted/reconstruction.nvm" "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_meshing/odm_25dmesh.ply" "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_texturing_25d/odm_textured_model_geo" -d gmi -o gauss_clamping -t none --no_intermediate_results   --nadir_mode  --max_texture_size=8192
+/code/SuperBuild/install/bin/texrecon (built on Oct 21 2024, 17:35:06)
+Load and prepare mesh:
+Reading PLY: 187210 verts... 374764 faces... done.
+Generating texture views:
+NVM: Loading file...
+NVM: Number of views: 48
+NVM: Number of features: 55155
+
+
+Loading 100%... done. (Took 5.82s)
+Building adjacency graph:
+
+
+Adding edges 100%... done. (Took 0.774s)
+562137 total edges.
+View selection:
+Building BVH from 374764 faces... done. (Took: 361 ms)
+
+
+Calculating face qualities 100%... done. (Took 10.952s)
+
+
+Postprocessing face infos 100%... done. (Took 1.34s)
+Maximum quality of a face within an image: 9939.17
+Clamping qualities to 9870.58 within normalization.
+Optimizing:
+Time[s]	Energy
+0	119617
+1	117631
+2	113039
+2	110633
+3	109529
+4	108923
+4	108591
+5	108420
+5	108233
+6	108079
+6	107976
+7	107927
+7	107878
+8	107845
+8	107806
+9	107783
+24452 faces have not been seen
+Took: 23.06s
+Generating texture patches:
+Running... done. (Took 7.103s)
+3693 texture patches.
+Running global seam leveling:
+Create matrices for optimization...  done.
+Lhs dimensionality: 191046 x 191046
+Calculating adjustments:
+Color channel 2: CG took 81 iterations. Residual is 9.75568e-05
+Color channel 0: CG took 81 iterations. Residual is 9.77199e-05
+Color channel 1: CG took 81 iterations. Residual is 9.66274e-05
+Took 0.623 seconds
+
+
+Adjusting texture patches 100%... done. (Took 1.735s)
+Running local seam leveling:
+
+
+Blending texture patches 100%... done. (Took 17.676s)
+Generating texture atlases:
+Sorting texture patches... done.
+
+Working on atlas 8 100%... done.
+Finalizing texture atlases... done. (Took: 0s)
+Building objmodel:
+Saving model... done.
+Whole texturing procedure took: 93.529s
+[INFO]    Generating glTF Binary
+[INFO]    Converting /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_texturing_25d/odm_textured_model_geo.obj --> /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_texturing_25d/odm_textured_model_geo.glb
+[INFO]    Loading /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_texturing_25d/odm_textured_model_geo.obj
+[INFO]    Loading odm_textured_model_geo_material0000_map_Kd.png
+[INFO]    Loading odm_textured_model_geo_material0001_map_Kd.png
+[INFO]    Loading odm_textured_model_geo_material0002_map_Kd.png
+[INFO]    Loading odm_textured_model_geo_material0003_map_Kd.png
+[INFO]    Loading odm_textured_model_geo_material0004_map_Kd.png
+[INFO]    Loading odm_textured_model_geo_material0005_map_Kd.png
+[INFO]    Loading odm_textured_model_geo_material0006_map_Kd.png
+[INFO]    Loading odm_textured_model_geo_material0007_map_Kd.png
+2024-11-11 11:56:27,714 WARNING: CPLE_NotSupported in driver JPEG does not support creation option JPEG_QUALITY
+2024-11-11 11:56:28,641 WARNING: CPLE_NotSupported in driver JPEG does not support creation option JPEG_QUALITY
+2024-11-11 11:56:29,572 WARNING: CPLE_NotSupported in driver JPEG does not support creation option JPEG_QUALITY
+2024-11-11 11:56:30,490 WARNING: CPLE_NotSupported in driver JPEG does not support creation option JPEG_QUALITY
+2024-11-11 11:56:31,388 WARNING: CPLE_NotSupported in driver JPEG does not support creation option JPEG_QUALITY
+2024-11-11 11:56:32,270 WARNING: CPLE_NotSupported in driver JPEG does not support creation option JPEG_QUALITY
+2024-11-11 11:56:33,178 WARNING: CPLE_NotSupported in driver JPEG does not support creation option JPEG_QUALITY
+2024-11-11 11:56:34,001 WARNING: CPLE_NotSupported in driver JPEG does not support creation option JPEG_QUALITY
+[INFO]    Writing...
+[INFO]    Wrote /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_texturing_25d/odm_textured_model_geo.glb
+[INFO]    Compressing with draco
+[INFO]    running draco_transcoder -i "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_texturing_25d/odm_textured_model_geo.glb" -o "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_texturing_25d/odm_textured_model_geo_compressed.glb" -qt 16 -qp 16
+Transcode	/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_texturing_25d/odm_textured_model_geo.glb	1920
+[INFO]    Finished mvs_texturing stage
+[INFO]    Running odm_georeferencing stage
+[INFO]    Georeferencing point cloud
+[INFO]    las scale calculated as the minimum of 1/10 estimated spacing or 0.001, which ever is less.
+[INFO]    running pdal translate -i "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_filterpoints/point_cloud.ply" -o "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.laz" ferry transformation --filters.ferry.dimensions="views => UserData" --filters.transformation.matrix="1 0 0 356603.0 0 1 0 5644965.0 0 0 1 0 0 0 0 1" --writers.las.offset_x=356603.0 --writers.las.offset_y=5644965.0 --writers.las.scale_x=0.001 --writers.las.scale_y=0.001 --writers.las.scale_z=0.001 --writers.las.offset_z=0 --writers.las.a_srs="+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs +type=crs"
+[INFO]    Calculating cropping area and generating bounds shapefile from point cloud
+[INFO]    running pdal translate -i "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.laz" -o "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.decimated.las" decimation --filters.decimation.step=4
+[INFO]    running pdal info --boundary --filters.hexbin.edge_size=1 --filters.hexbin.threshold=0 "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.decimated.las" > "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.boundary.json"
+[INFO]    running pdal info --summary "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.laz" > "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.summary.json"
+[INFO]    running ogr2ogr -overwrite -f GPKG -a_srs "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs" /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.bounds.gpkg /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.bounds.geojson
+[INFO]    Creating Entwine Point Tile output
+[INFO]    running entwine build --threads 8 --tmp "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/entwine_pointcloud-tmp" -i /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.laz -o "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/entwine_pointcloud"
+1/1: /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.laz
+Dimensions: [
+X:int32, Y:int32, Z:int32, Intensity:uint16, ReturnNumber:uint8,
+NumberOfReturns:uint8, ScanDirectionFlag:uint8, EdgeOfFlightLine:uint8,
+Classification:uint8, ScanAngleRank:float32, UserData:uint8,
+PointSourceId:uint16, GpsTime:float64, Red:uint16, Green:uint16, Blue:uint16
+]
+Points: 55,083
+Bounds: [(356492, 5644816, 89), (356724, 5645109, 149)]
+Scale: 0.001
+SRS: EPSG:32632
+
+Adding 0 - /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.laz
+Joining
+Done 0
+Saving
+Wrote 55,083 points.
+[INFO]    Finished odm_georeferencing stage
+[INFO]    Running odm_dem stage
+[INFO]    Create DSM: False
+[INFO]    Create DTM: False
+[INFO]    DEM input file /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.laz found: True
+[WARNING] DEM will not be generated
+[INFO]    Finished odm_dem stage
+[INFO]    Running odm_orthophoto stage
+[INFO]    Creating GeoTIFF
+[INFO]    running "/code/SuperBuild/install/bin/odm_orthophoto" -inputFiles /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_texturing_25d/odm_textured_model_geo.obj -logFile "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto_log.txt" -outputFile "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto.tif" -resolution 20.0 -verbose -outputCornerFile "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto_corners.txt"   -inpaintThreshold 1.0 -utm_north_offset 5644965.0 -utm_east_offset 356603.0 -a_srs "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs +type=crs" -co TILED=YES -co COMPRESS=DEFLATE -co PREDICTOR=2 -co BIGTIFF=IF_SAFER -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=8 --config GDAL_CACHEMAX 2270525440.0
+Inpaint threshold was set to: 1
+
+Reading mesh file... /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_texturing_25d/odm_textured_model_geo.obj
+Found material0000
+Loading odm_textured_model_geo_material0000_map_Kd.png
+Found material0001
+Loading odm_textured_model_geo_material0001_map_Kd.png
+Found material0002
+Loading odm_textured_model_geo_material0002_map_Kd.png
+Found material0003
+Loading odm_textured_model_geo_material0003_map_Kd.png
+Found material0004
+Loading odm_textured_model_geo_material0004_map_Kd.png
+Found material0005
+Loading odm_textured_model_geo_material0005_map_Kd.png
+Found material0006
+Loading odm_textured_model_geo_material0006_map_Kd.png
+Found material0007
+Loading odm_textured_model_geo_material0007_map_Kd.png
+Mesh file read.
+
+Boundary points:
+Point 1: -107.134 -140.858
+Point 2: -107.134 139.274
+Point 3: 116.923 139.274
+Point 4: 116.923 -140.858
+
+Model bounds x : -107.134 -> 116.923
+Model bounds y : -140.858 -> 139.274
+Model area : 62765.7m2
+Model resolution, width x height : 4482x5603
+Translating and scaling mesh...
+Rendering the ortho photo...
+Texture channels: 3
+Texture depth: 8bit
+Rendering material0000 ... done
+Rendering material0001 ... done
+Rendering material0002 ... done
+Rendering material0003 ... done
+Rendering material0004 ... done
+Rendering material0005 ... done
+Rendering material0006 ... done
+Rendering material0007 ... done
+... model rendered
+
+Edge inpainting
+Block [(2048, 3072), (1024, 2048)]
+Block [(0, 1024), (4096, 5603)]
+Block [(1024, 2048), (2048, 3072)]
+Block [(2048, 3072), (4096, 5603)]
+Block [(3072, 4482), (0, 1024)]
+Block [(2048, 3072), (3072, 4096)]
+Block [(0, 1024), (3072, 4096)]
+Block [(0, 1024), (0, 1024)]
+Block [(3072, 4482), (1024, 2048)]
+Block [(2048, 3072), (2048, 3072)]
+Block [(3072, 4482), (3072, 4096)]
+Block [(1024, 2048), (3072, 4096)]
+Block [(1024, 2048), (0, 1024)]
+Block [(0, 1024), (1024, 2048)]
+Block [(3072, 4482), (2048, 3072)]
+Block [(3072, 4482), (4096, 5603)]
+Block [(1024, 2048), (4096, 5603)]
+Block [(0, 1024), (2048, 3072)]
+Block [(2048, 3072), (0, 1024)]
+Block [(1024, 2048), (1024, 2048)]
+
+Writing ortho photo to /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto.tif
+Set GDAL_CACHEMAX to 2270525440
+Set TILED=YES
+Set COMPRESS=DEFLATE
+Set PREDICTOR=2
+Set BIGTIFF=IF_SAFER
+Set BLOCKXSIZE=512
+Set BLOCKYSIZE=512
+Set NUM_THREADS=8
+Writing corner coordinates to /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto_corners.txt
+Orthophoto generation done.
+[INFO]    Cropping /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto.tif
+[INFO]    running gdalwarp -cutline /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.bounds.gpkg -crop_to_cutline -co TILED=YES -co COMPRESS=DEFLATE -co PREDICTOR=2 -co BIGTIFF=IF_SAFER -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=8 -dstalpha /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto.original.tif /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto.tif --config GDAL_CACHEMAX 27.6%
+Using band 4 of source image as alpha.
+Creating output file that is 4299P x 5626L.
+Processing /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto.original.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    Optimizing /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto.tif as Cloud Optimized GeoTIFF
+[INFO]    running gdal_translate -of COG -co NUM_THREADS=8 -co BLOCKSIZE=256 -co COMPRESS=DEFLATE -co PREDICTOR=2 -co BIGTIFF=IF_SAFER -co RESAMPLING=NEAREST --config GDAL_CACHEMAX 28.25% --config GDAL_NUM_THREADS 8 "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto.tif" "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto_cogeo.tif"
+Input file size is 4299, 5626
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    Finished odm_orthophoto stage
+[INFO]    Running odm_report stage
+[INFO]    Exporting shots.geojson
+[INFO]    Wrote /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_report/shots.geojson
+[INFO]    Copied /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/camera_mappings.npz --> /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_report/camera_mappings.npz
+[INFO]    running pdal info --dimensions "X,Y,Z" "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.laz" > "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.info.json"
+[INFO]    running pdal translate -i "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.laz" -o "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/stats/overlap.tif" --writer gdal --writers.gdal.resolution=0.20910928571397172 --writers.gdal.data_type=uint8_t --writers.gdal.dimension=UserData --writers.gdal.output_type=max --writers.gdal.radius=2.957251878748493
+[INFO]    Cropping /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/stats/overlap.tif
+[INFO]    running gdalwarp -cutline /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_georeferencing/odm_georeferenced_model.bounds.gpkg -crop_to_cutline -co TILED=YES -co COMPRESS=DEFLATE -co PREDICTOR=2 -co BIGTIFF=IF_SAFER -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=8  /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/stats/overlap.original.tif /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/stats/overlap.tif --config GDAL_CACHEMAX 27.6%
+Creating output file that is 1027P x 1344L.
+Processing /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/stats/overlap.original.tif [1/1] : 0Using internal nodata values (e.g. 255) for image /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/stats/overlap.original.tif.
+Copying nodata values from source /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/stats/overlap.original.tif to destination /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/stats/overlap.tif.
+...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    running gdaldem color-relief "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/stats/overlap.tif" "/code/opendm/report/overlap_color_map.txt" "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/stats/overlap.png" -of PNG -alpha
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    running gdal_translate -of png "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto.tif" "/var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/opensfm/stats/ortho.png" -outsize 1400 0  --config GDAL_CACHEMAX 27.5%
+Input file size is 4299, 5626
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    Exporting report to /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_report/report.pdf
+2024-11-11 11:57:09,096 DEBUG: Final doc sections size summary:
+2024-11-11 11:57:09,097 DEBUG: - header.size: 9.0B
+2024-11-11 11:57:09,111 DEBUG: - pages.size: 4.0KiB
+2024-11-11 11:57:09,111 DEBUG: - resources.fonts.size: 199.0B
+2024-11-11 11:57:09,122 DEBUG: - resources.images.size: 10.0MiB
+2024-11-11 11:57:09,122 DEBUG: - resources.dict.size: 204.0B
+2024-11-11 11:57:09,122 DEBUG: - info.size: 55.0B
+2024-11-11 11:57:09,122 DEBUG: - catalog.size: 104.0B
+2024-11-11 11:57:09,122 DEBUG: - xref.size: 550.0B
+2024-11-11 11:57:09,122 DEBUG: - trailer.size: 68.0B
+[INFO]    Finished odm_report stage
+[INFO]    Running odm_postprocess stage
+[INFO]    Post Processing
+[INFO]    Adding TIFFTAGs to /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto.tif
+2024-11-11 11:57:09,141 WARNING: CPLE_AppDefined in /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554/odm_orthophoto/odm_orthophoto.tif: The IFD has been rewritten at the end of the file, which breaks COG layout.
+[INFO]    Finished odm_postprocess stage
+[INFO]    No more stages to run
+[INFO]    MMMMMMMMMMMNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNMMMMMMMMMMM
+[INFO]    MMMMMMdo:..---../sNMMMMMMMMMMMMMMMMMMMMMMMMMMNs/..---..:odMMMMMM
+[INFO]    MMMMy-.odNMMMMMNy/`/mMMMMMMMMMMMMMMMMMMMMMMm/`/hNMMMMMNdo.-yMMMM
+[INFO]    MMN/`sMMMMMMMMMNNMm/`yMMMMMMMMMMMMMMMMMMMMy`/mMNNMMMMMMMMNs`/MMM
+[INFO]    MM/ hMMMMMMMMNs.+MMM/ dMMMMMMMMMMMMMMMMMMh +MMM+.sNMMMMMMMMh +MM
+[INFO]    MN /MMMMMMNo/./mMMMMN :MMMMMMMMMMMMMMMMMM: NMMMMm/./oNMMMMMM: NM
+[INFO]    Mm +MMMMMN+ `/MMMMMMM`-MMMMMMMMMMMMMMMMMM-`MMMMMMM:` oNMMMMM+ mM
+[INFO]    MM..NMMNs./mNMMMMMMMy sMMMMMMMMMMMMMMMMMMo hMMMMMMMNm/.sNMMN`-MM
+[INFO]    MMd`:mMNomMMMMMMMMMy`:MMMMMMMNmmmmNMMMMMMN:`hMMMMMMMMMdoNMm-`dMM
+[INFO]    MMMm:.omMMMMMMMMNh/  sdmmho/.`..`-``-/sddh+  /hNMMMMMMMMdo.:mMMM
+[INFO]    MMMMMd+--/osss+:-:/`  ```:- .ym+ hmo``:-`   `+:-:ossso/-:+dMMMMM
+[INFO]    MMMMMMMNmhysosydmNMo   /ds`/NMM+ hMMd..dh.  sMNmdysosyhmNMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMMMs .:-:``hmmN+ yNmds -:.:`-NMMMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMMN.-mNm- //:::. -:://: +mMd`-NMMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMM+ dMMN -MMNNN+ yNNNMN :MMMs sMMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMM`.mmmy /mmmmm/ smmmmm``mmmh :MMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMM``:::- ./////. -:::::` :::: -MMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMM:`mNNd /NNNNN+ hNNNNN .NNNy +MMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMMd`/MMM.`ys+//. -/+oso +MMN.`mMMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMMMy /o:- `oyhd/ shys+ `-:s-`hMMMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMNmdhhhdmNMMM`  +d+ sMMM+ hMMN:`hh-  sMMNmdhhhdmNMMMMMMMM
+[INFO]    MMMMMms:::/++//::+ho    .+- /dM+ hNh- +/`   -h+:://++/::/smMMMMM
+[INFO]    MMMN+./hmMMMMMMNds-  ./oso:.``:. :-``.:os+-  -sdNMMMMMMmy:.oNMMM
+[INFO]    MMm-.hMNhNMMMMMMMMNo`/MMMMMNdhyyyyhhdNMMMM+`oNMMMMMMMMNhNMh.-mMM
+[INFO]    MM:`mMMN/-sNNMMMMMMMo yMMMMMMMMMMMMMMMMMMy sMMMMMMMNNs-/NMMm`:MM
+[INFO]    Mm /MMMMMd/.-oMMMMMMN :MMMMMMMMMMMMMMMMMM-`MMMMMMMo-./dMMMMM/ NM
+[INFO]    Mm /MMMMMMm:-`sNMMMMN :MMMMMMMMMMMMMMMMMM-`MMMMMNs`-/NMMMMMM/ NM
+[INFO]    MM:`mMMMMMMMMd/-sMMMo yMMMMMMMMMMMMMMMMMMy sMMMs-/dMMMMMMMMd`:MM
+[INFO]    MMm-.hMMMMMMMMMdhMNo`+MMMMMMMMMMMMMMMMMMMM+`oNMhdMMMMMMMMMh.-mMM
+[INFO]    MMMNo./hmNMMMMMNms--yMMMMMMMMMMMMMMMMMMMMMMy--smNMMMMMNmy/.oNMMM
+[INFO]    MMMMMms:-:/+++/:-+hMMMMMMMMMMMMMMMMMMMMMMMMMNh+-:/+++/:-:smMMMMM
+[INFO]    MMMMMMMMNdhhyhdmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmdhyhhmNMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMNNNNNMMMMMMNNNNNNMMMMMMMMNNMMMMMMMNNMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMh/-...-+dMMMm......:+hMMMMs../MMMMMo..sMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMM/  /yhy-  sMMm  -hhy/  :NMM+   oMMMy   /MMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMy  /MMMMN`  NMm  /MMMMo  +MM: .` yMd``` :MMMMMMMMMMMM
+[INFO]    MMMMMMMMMMM+  sMMMMM:  hMm  /MMMMd  -MM- /s `h.`d- -MMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMs  +MMMMM.  mMm  /MMMMy  /MM. +M/   yM: `MMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMN-  smNm/  +MMm  :NNdo` .mMM` oMM+/yMM/  MMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMNo-    `:yMMMm      `:sNMMM` sMMMMMMM+  NMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMNmmNMMMMMMMNmmmmNMMMMMMMNNMMMMMMMMMNNMMMMMMMMMMMM
+[INFO]    ODM app finished - Mon Nov 11 11:57:09  2024
+..100 - done.
+Postprocessing: /var/www/data/10a3d8b2-1b9c-4810-891d-ed1adde2b554
+
+Found point cloud: odm_georeferencing/odm_georeferenced_model.laz
+
+Entwine point cloud is already built.
+
+Entwine point cloud is already built.
+Postprocessing: done (•̀ᴗ•́)و!
